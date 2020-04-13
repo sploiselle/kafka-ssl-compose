@@ -1,0 +1,62 @@
+keytool -exportcert -alias consumer -keystore secrets/consumer.keystore.jks    -rfc -file certificate.pem
+keytool -v -importkeystore -srckeystore secrets/consumer.keystore.jks -srcalias consumer -destkeystore cert_and_key.p12 -deststoretype PKCS12
+openssl pkcs12 -in cert_and_key.p12 -nocerts -nodes > key.pem
+keytool -exportcert -alias CARoot -keystore secrets/consumer.keystore.jks -rfc -file CARoot.pem
+
+
+kafkacat -b broker:9092 \
+-X security.protocol=SSL \
+-X ssl.key.location=/secrets/key.pem \
+-X ssl.certificate.location=/secrets/certificate.pem \
+-X ssl.ca.location=/secrets/CARoot.pem \
+-X ssl.key.password=datahub \
+-L
+
+
+echo "my computer is very large" | \
+kafkacat -b broker:9092 \
+-X security.protocol=SSL \
+-X ssl.key.location=/secrets/key.pem \
+-X ssl.certificate.location=/secrets/certificate.pem \
+-X ssl.ca.location=/secrets/CARoot.pem \
+-X ssl.key.password=datahub \
+-P \
+-t quotes
+
+docker run --tty \
+           --network kafka-ssl-compose_default \
+           confluentinc/cp-kafkacat \
+           kafkacat -b broker:9092 \
+                    -L
+
+docker run --tty \
+           --network kafka-ssl-compose_default \
+           confluentinc/cp-kafkacat \
+           kafkacat -b localhost:9092 \
+            -X security.protocol=SSL \
+            -X ssl.key.location=key.pem \
+            -X ssl.certificate.location=certificate.pem \
+            -X ssl.ca.location=CARoot.pem \
+            -X ssl.key.password=datahub \
+            -L
+
+
+/Users/sean/docker/kafka-ssl-compose
+
+CREATE MATERIALIZED SOURCE quotes
+FROM KAFKA BROKER 'broker:9092'
+    TOPIC 'quotes' 
+    WITH (
+        security_protocol='SSL',
+        ssl_key_location='/secrets/key.pem',
+        ssl_certificate_location='/secrets/certificate.pem',
+        ssl_ca_location='/secrets/CARoot.pem',
+        ssl_key_password='datahub'
+    )
+    FORMAT AVRO 
+        USING CONFLUENT SCHEMA REGISTRY 'schema-registry:8181';
+
+
+
+bin/ci-image build materialized
+:local

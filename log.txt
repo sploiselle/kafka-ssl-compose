@@ -1,0 +1,1499 @@
+Attaching to schemaregistryui, zookeeper, kafka-ssl-compose_kafkacat_1, broker, schema-registry
+[36mbroker              |[0m ===> ENV Variables ...
+[36mbroker              |[0m ALLOW_UNSIGNED=false
+[36mbroker              |[0m COMPONENT=kafka
+[36mbroker              |[0m CONFLUENT_DEB_VERSION=1
+[36mbroker              |[0m CONFLUENT_PLATFORM_LABEL=
+[36mbroker              |[0m CONFLUENT_VERSION=5.4.1
+[36mbroker              |[0m CUB_CLASSPATH=/etc/confluent/docker/docker-utils.jar
+[36mbroker              |[0m HOME=/root
+[36mbroker              |[0m HOSTNAME=broker
+[36mbroker              |[0m KAFKA_ADVERTISED_LISTENERS=SSL://broker:9092
+[36mbroker              |[0m KAFKA_BROKER_ID=1
+[36mbroker              |[0m KAFKA_CREATE_TOPICS=quotes:1:1:compact
+[36mbroker              |[0m KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+[36mbroker              |[0m KAFKA_SECURITY_INTER_BROKER_PROTOCOL=SSL
+[36mbroker              |[0m KAFKA_SECURITY_PROTOCOL=SSL
+[36mbroker              |[0m KAFKA_SSL_CLIENT_AUTH=required
+[36mbroker              |[0m KAFKA_SSL_KEYSTORE_CREDENTIALS=cert_creds
+[36mbroker              |[0m KAFKA_SSL_KEYSTORE_FILENAME=broker.keystore.jks
+[36mbroker              |[0m KAFKA_SSL_KEY_CREDENTIALS=cert_creds
+[36mbroker              |[0m KAFKA_SSL_TRUSTSTORE_CREDENTIALS=cert_creds
+[36mbroker              |[0m KAFKA_SSL_TRUSTSTORE_FILENAME=broker.truststore.jks
+[36mbroker              |[0m KAFKA_VERSION=
+[36mbroker              |[0m KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+[36mbroker              |[0m LANG=C.UTF-8
+[36mbroker              |[0m PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[36mbroker              |[0m PWD=/
+[36mbroker              |[0m PYTHON_PIP_VERSION=8.1.2
+[36mbroker              |[0m PYTHON_VERSION=2.7.9-1
+[36mbroker              |[0m SCALA_VERSION=2.12
+[36mbroker              |[0m SHLVL=1
+[36mbroker              |[0m ZULU_OPENJDK_VERSION=8=8.38.0.13
+[36mbroker              |[0m _=/usr/bin/env
+[36mbroker              |[0m affinity:container==1e282977c290faf18126bd37d492c5feec28847761322c5f6c745405984935d0
+[32mschema-registry     |[0m ===> ENV Variables ...
+[36mbroker              |[0m ===> User
+[35mschemaregistryui    |[0m Landoop Schema Registry UI 0.9.5
+[35mschemaregistryui    |[0m Visit <https://github.com/Landoop/schema-registry-ui/tree/master/docker>
+[35mschemaregistryui    |[0m to find more about how you can configure this container.
+[35mschemaregistryui    |[0m 
+[36mbroker              |[0m uid=0(root) gid=0(root) groups=0(root)
+[35mschemaregistryui    |[0m Enabling proxy.
+[34mzookeeper           |[0m ===> ENV Variables ...
+[34mzookeeper           |[0m ALLOW_UNSIGNED=false
+[34mzookeeper           |[0m COMPONENT=zookeeper
+[34mzookeeper           |[0m CONFLUENT_DEB_VERSION=1
+[34mzookeeper           |[0m CONFLUENT_PLATFORM_LABEL=
+[34mzookeeper           |[0m CONFLUENT_VERSION=5.4.1
+[34mzookeeper           |[0m CUB_CLASSPATH=/etc/confluent/docker/docker-utils.jar
+[34mzookeeper           |[0m HOME=/root
+[34mzookeeper           |[0m HOSTNAME=zookeeper
+[34mzookeeper           |[0m KAFKA_VERSION=
+[34mzookeeper           |[0m LANG=C.UTF-8
+[34mzookeeper           |[0m PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[34mzookeeper           |[0m PWD=/
+[34mzookeeper           |[0m PYTHON_PIP_VERSION=8.1.2
+[34mzookeeper           |[0m PYTHON_VERSION=2.7.9-1
+[34mzookeeper           |[0m SCALA_VERSION=2.12
+[34mzookeeper           |[0m SHLVL=1
+[34mzookeeper           |[0m ZOOKEEPER_CLIENT_PORT=2181
+[34mzookeeper           |[0m ZOOKEEPER_SERVER_ID=1
+[34mzookeeper           |[0m ZULU_OPENJDK_VERSION=8=8.38.0.13
+[34mzookeeper           |[0m _=/usr/bin/env
+[35mschemaregistryui    |[0m Setting Schema Registry URL to /api/schema-registry.
+[33mkafka-ssl-compose_kafkacat_1 exited with code 0
+[0m[36mbroker              |[0m ===> Configuring ...
+[32mschema-registry     |[0m ALLOW_UNSIGNED=false
+[32mschema-registry     |[0m COMPONENT=schema-registry
+[32mschema-registry     |[0m CONFLUENT_DEB_VERSION=1
+[32mschema-registry     |[0m CONFLUENT_PLATFORM_LABEL=
+[32mschema-registry     |[0m CONFLUENT_VERSION=5.4.1
+[32mschema-registry     |[0m CUB_CLASSPATH=/etc/confluent/docker/docker-utils.jar
+[32mschema-registry     |[0m HOME=/root
+[32mschema-registry     |[0m HOSTNAME=schema-registry
+[32mschema-registry     |[0m KAFKA_VERSION=
+[32mschema-registry     |[0m LANG=C.UTF-8
+[32mschema-registry     |[0m PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[32mschema-registry     |[0m PWD=/
+[32mschema-registry     |[0m PYTHON_PIP_VERSION=8.1.2
+[32mschema-registry     |[0m PYTHON_VERSION=2.7.9-1
+[32mschema-registry     |[0m SCALA_VERSION=2.12
+[32mschema-registry     |[0m SCHEMA_REGISTRY_HOST_NAME=schema-registry
+[32mschema-registry     |[0m SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS=SSL://broker:9092
+[32mschema-registry     |[0m SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL=zookeeper:2181
+[32mschema-registry     |[0m SCHEMA_REGISTRY_KAFKASTORE_SECURITY_PROTOCOL=SSL
+[32mschema-registry     |[0m SCHEMA_REGISTRY_KAFKASTORE_SSL_KEYSTORE_LOCATION=/etc/schema-registry/secrets/schema-registry.keystore.jks
+[32mschema-registry     |[0m SCHEMA_REGISTRY_KAFKASTORE_SSL_TRUSTSTORE_LOCATION=/etc/schema-registry/secrets/schema-registry.truststore.jks
+[32mschema-registry     |[0m SCHEMA_REGISTRY_KAFKASTORE_TOPIC=_schemas
+[32mschema-registry     |[0m SCHEMA_REGISTRY_LISTENERS=https://0.0.0.0:8181
+[32mschema-registry     |[0m SCHEMA_REGISTRY_SCHEMA_REGISTRY_INTER_INSTANCE_PROTOCOL=https
+[32mschema-registry     |[0m SCHEMA_REGISTRY_SSL_CLIENT_AUTH=true
+[32mschema-registry     |[0m SCHEMA_REGISTRY_SSL_KEYSTORE_LOCATION=/etc/schema-registry/secrets/schema-registry.keystore.jks
+[32mschema-registry     |[0m SCHEMA_REGISTRY_SSL_TRUSTSTORE_LOCATION=/etc/schema-registry/secrets/schema-registry.truststore.jks
+[32mschema-registry     |[0m SHLVL=1
+[32mschema-registry     |[0m ZULU_OPENJDK_VERSION=8=8.38.0.13
+[32mschema-registry     |[0m _=/usr/bin/env
+[34mzookeeper           |[0m ===> User
+[35mschemaregistryui    |[0m Note: if you use a PORT lower than 1024, please note that schema-registry-ui can
+[35mschemaregistryui    |[0m now run under any user. In the future a non-root user may become the default.
+[35mschemaregistryui    |[0m In this case you will have to explicitly allow binding to such ports, either by
+[35mschemaregistryui    |[0m setting the root user or something like '--sysctl net.ipv4.ip_unprivileged_port_start=0'.
+[35mschemaregistryui    |[0m 
+[35mschemaregistryui    |[0m Activating privacy features... done.
+[35mschemaregistryui    |[0m http://0.0.0.0:8000
+[32mschema-registry     |[0m ===> User
+[34mzookeeper           |[0m uid=0(root) gid=0(root) groups=0(root)
+[34mzookeeper           |[0m ===> Configuring ...
+[32mschema-registry     |[0m uid=0(root) gid=0(root) groups=0(root)
+[32mschema-registry     |[0m ===> Configuring ...
+[36mbroker              |[0m SSL is enabled.
+[34mzookeeper           |[0m ===> Running preflight checks ... 
+[34mzookeeper           |[0m ===> Check if /var/lib/zookeeper/data is writable ...
+[34mzookeeper           |[0m ===> Check if /var/lib/zookeeper/log is writable ...
+[32mschema-registry     |[0m ===> Running preflight checks ... 
+[32mschema-registry     |[0m ===> Check if Zookeeper is healthy ...
+[34mzookeeper           |[0m ===> Launching ... 
+[34mzookeeper           |[0m ===> Printing /var/lib/zookeeper/data/myid 
+[34mzookeeper           |[0m 1===> Launching zookeeper ... 
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.5.6-c11b7e26bc554b8523dc929761dd28808913f091, built on 10/08/2019 20:18 GMT
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:host.name=schema-registry
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_212
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Azul Systems, Inc.
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.home=/usr/lib/jvm/zulu-8-amd64/jre
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/etc/confluent/docker/docker-utils.jar
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/tmp
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.name=Linux
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.version=4.19.76-linuxkit
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.name=root
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.home=/root
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.free=117MB
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.max=1771MB
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.total=121MB
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=zookeeper:2181 sessionTimeout=40000 watcher=io.confluent.admin.utils.ZookeeperConnectionWatcher@cc34f4d
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.common.X509Util - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ClientCnxnSocket - jute.maxbuffer value is 4194304 Bytes
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ClientCnxn - zookeeper.request.timeout value is 0. feature enabled=
+[32mschema-registry     |[0m [main-SendThread(zookeeper:2181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server zookeeper/172.18.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+[32mschema-registry     |[0m [main-SendThread(zookeeper:2181)] INFO org.apache.zookeeper.ClientCnxn - Socket error occurred: zookeeper/172.18.0.2:2181: Connection refused
+[34mzookeeper           |[0m [2020-04-13 19:44:10,802] INFO Reading configuration from: /etc/kafka/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,808] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,808] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,811] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,811] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,811] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,811] WARN Either no config or no quorum defined in config, running  in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,812] INFO Log4j found with jmx enabled. (org.apache.zookeeper.jmx.ManagedUtil)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,822] INFO Reading configuration from: /etc/kafka/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,823] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,823] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,823] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,826] INFO zookeeper.snapshot.trust.empty : false (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,834] INFO Server environment:zookeeper.version=3.5.7-f0fdd52973d373ffd9c86b81d99842dc2c7f660e, built on 02/10/2020 11:30 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,834] INFO Server environment:host.name=zookeeper (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,834] INFO Server environment:java.version=1.8.0_212 (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:java.vendor=Azul Systems, Inc. (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:java.home=/usr/lib/jvm/zulu-8-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:java.class.path=/usr/bin/../share/java/kafka/commons-compress-1.19.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-test-sources.jar:/usr/bin/../share/java/kafka/jakarta.annotation-api-1.3.4.jar:/usr/bin/../share/java/kafka/kafka-log4j-appender-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/jackson-module-paranamer-2.9.10.jar:/usr/bin/../share/java/kafka/httpclient-4.5.9.jar:/usr/bin/../share/java/kafka/slf4j-log4j12-1.7.28.jar:/usr/bin/../share/java/kafka/kafka.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-2.28.jar:/usr/bin/../share/java/kafka/netty-transport-native-epoll-4.1.45.Final.jar:/usr/bin/../share/java/kafka/commons-logging-1.2.jar:/usr/bin/../share/java/kafka/jackson-annotations-2.9.10.jar:/usr/bin/../share/java/kafka/kafka-tools-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/support-metrics-common-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/validation-api-2.0.1.Final.jar:/usr/bin/../share/java/kafka/scala-java8-compat_2.12-0.9.0.jar:/usr/bin/../share/java/kafka/maven-artifact-3.6.1.jar:/usr/bin/../share/java/kafka/log4j-1.2.17.jar:/usr/bin/../share/java/kafka/jackson-databind-2.9.10.3.jar:/usr/bin/../share/java/kafka/jackson-dataformat-csv-2.9.10.jar:/usr/bin/../share/java/kafka/kafka-streams-scala_2.12-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/hk2-api-2.5.0.jar:/usr/bin/../share/java/kafka/jopt-simple-5.0.4.jar:/usr/bin/../share/java/kafka/jersey-client-2.28.jar:/usr/bin/../share/java/kafka/javassist-3.22.0-CR2.jar:/usr/bin/../share/java/kafka/jetty-continuation-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/reflections-0.9.11.jar:/usr/bin/../share/java/kafka/zookeeper-jute-3.5.7.jar:/usr/bin/../share/java/kafka/paranamer-2.8.jar:/usr/bin/../share/java/kafka/jaxb-api-2.3.0.jar:/usr/bin/../share/java/kafka/netty-common-4.1.45.Final.jar:/usr/bin/../share/java/kafka/jetty-server-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/scala-logging_2.12-3.9.2.jar:/usr/bin/../share/java/kafka/jackson-module-jaxb-annotations-2.9.10.jar:/usr/bin/../share/java/kafka/connect-mirror-client-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/guava-20.0.jar:/usr/bin/../share/java/kafka/jackson-module-scala_2.12-2.9.10.jar:/usr/bin/../share/java/kafka/jetty-io-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/metrics-core-2.2.0.jar:/usr/bin/../share/java/kafka/netty-resolver-4.1.45.Final.jar:/usr/bin/../share/java/kafka/jackson-datatype-jdk8-2.9.10.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-test.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-javadoc.jar:/usr/bin/../share/java/kafka/zookeeper-3.5.7.jar:/usr/bin/../share/java/kafka/jersey-server-2.28.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-core-2.28.jar:/usr/bin/../share/java/kafka/commons-codec-1.11.jar:/usr/bin/../share/java/kafka/jetty-servlets-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/jetty-servlet-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-json-provider-2.9.10.jar:/usr/bin/../share/java/kafka/connect-transforms-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/scala-collection-compat_2.12-2.1.2.jar:/usr/bin/../share/java/kafka/scala-reflect-2.12.10.jar:/usr/bin/../share/java/kafka/jetty-util-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/argparse4j-0.7.0.jar:/usr/bin/../share/java/kafka/plexus-utils-3.2.0.jar:/usr/bin/../share/java/kafka/jersey-media-jaxb-2.28.jar:/usr/bin/../share/java/kafka/hk2-locator-2.5.0.jar:/usr/bin/../share/java/kafka/netty-codec-4.1.45.Final.jar:/usr/bin/../share/java/kafka/httpmime-4.5.9.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-base-2.9.10.jar:/usr/bin/../share/java/kafka/avro-1.9.1.jar:/usr/bin/../share/java/kafka/slf4j-api-1.7.28.jar:/usr/bin/../share/java/kafka/netty-handler-4.1.45.Final.jar:/usr/bin/../share/java/kafka/jakarta.inject-2.5.0.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-scaladoc.jar:/usr/bin/../share/java/kafka/connect-file-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/connect-basic-auth-extension-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-sources.jar:/usr/bin/../share/java/kafka/jersey-common-2.28.jar:/usr/bin/../share/java/kafka/jersey-hk2-2.28.jar:/usr/bin/../share/java/kafka/osgi-resource-locator-1.0.1.jar:/usr/bin/../share/java/kafka/jackson-core-2.9.10.jar:/usr/bin/../share/java/kafka/netty-buffer-4.1.45.Final.jar:/usr/bin/../share/java/kafka/kafka-streams-test-utils-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/httpcore-4.4.11.jar:/usr/bin/../share/java/kafka/javax.servlet-api-3.1.0.jar:/usr/bin/../share/java/kafka/kafka-streams-examples-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/netty-transport-native-unix-common-4.1.45.Final.jar:/usr/bin/../share/java/kafka/kafka-clients-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/hk2-utils-2.5.0.jar:/usr/bin/../share/java/kafka/audience-annotations-0.5.0.jar:/usr/bin/../share/java/kafka/snappy-java-1.1.7.3.jar:/usr/bin/../share/java/kafka/connect-runtime-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/jetty-client-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/commons-lang3-3.8.1.jar:/usr/bin/../share/java/kafka/rocksdbjni-5.18.3.jar:/usr/bin/../share/java/kafka/jetty-security-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/jakarta.ws.rs-api-2.1.5.jar:/usr/bin/../share/java/kafka/aopalliance-repackaged-2.5.0.jar:/usr/bin/../share/java/kafka/zstd-jni-1.4.3-1.jar:/usr/bin/../share/java/kafka/netty-transport-4.1.45.Final.jar:/usr/bin/../share/java/kafka/lz4-java-1.6.0.jar:/usr/bin/../share/java/kafka/connect-json-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/scala-library-2.12.10.jar:/usr/bin/../share/java/kafka/connect-mirror-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/connect-api-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/javax.ws.rs-api-2.1.1.jar:/usr/bin/../share/java/kafka/commons-cli-1.4.jar:/usr/bin/../share/java/kafka/activation-1.1.1.jar:/usr/bin/../share/java/kafka/kafka-streams-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/jetty-http-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/support-metrics-client-5.4.1-ccs.jar:/usr/bin/../support-metrics-client/build/dependant-libs-2.12/*:/usr/bin/../support-metrics-client/build/libs/*:/usr/share/java/support-metrics-client/* (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:os.version=4.19.76-linuxkit (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,835] INFO Server environment:user.name=root (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,836] INFO Server environment:user.home=/root (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,836] INFO Server environment:user.dir=/ (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,836] INFO Server environment:os.memory.free=500MB (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,836] INFO Server environment:os.memory.max=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,836] INFO Server environment:os.memory.total=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,837] INFO minSessionTimeout set to 6000 (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,837] INFO maxSessionTimeout set to 60000 (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,838] INFO Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /var/lib/zookeeper/log/version-2 snapdir /var/lib/zookeeper/data/version-2 (org.apache.zookeeper.server.ZooKeeperServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,851] INFO Logging initialized @288ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,912] WARN o.e.j.s.ServletContextHandler@1d29cf23{/,null,UNAVAILABLE} contextPath ends with /* (org.eclipse.jetty.server.handler.ContextHandler)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,912] WARN Empty contextPath (org.eclipse.jetty.server.handler.ContextHandler)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,919] INFO jetty-9.4.20.v20190813; built: 2019-08-13T21:28:18.144Z; git: 84700530e645e812b336747464d6fbbf370c9a20; jvm 1.8.0_212-b04 (org.eclipse.jetty.server.Server)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,948] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,948] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,949] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,955] INFO Started o.e.j.s.ServletContextHandler@1d29cf23{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,962] INFO Started ServerConnector@6e1ec318{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} (org.eclipse.jetty.server.AbstractConnector)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,962] INFO Started @400ms (org.eclipse.jetty.server.Server)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,963] INFO Started AdminServer on address 0.0.0.0, port 8080 and command URL /commands (org.apache.zookeeper.server.admin.JettyAdminServer)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,965] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,967] INFO Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers. (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,968] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,974] INFO zookeeper.snapshotSizeFactor = 0.33 (org.apache.zookeeper.server.ZKDatabase)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,976] INFO Reading snapshot /var/lib/zookeeper/data/version-2/snapshot.2da (org.apache.zookeeper.server.persistence.FileSnap)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,987] INFO Snapshotting: 0x2f8 to /var/lib/zookeeper/data/version-2/snapshot.2f8 (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[34mzookeeper           |[0m [2020-04-13 19:44:10,997] INFO Using checkIntervalMs=60000 maxPerMinute=10000 (org.apache.zookeeper.server.ContainerManager)
+[32mschema-registry     |[0m [main-SendThread(zookeeper:2181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server zookeeper/172.18.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+[32mschema-registry     |[0m [main-SendThread(zookeeper:2181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established, initiating session, client: /172.18.0.4:46640, server: zookeeper/172.18.0.2:2181
+[34mzookeeper           |[0m [2020-04-13 19:44:11,884] INFO Creating new log file: log.2f9 (org.apache.zookeeper.server.persistence.FileTxnLog)
+[32mschema-registry     |[0m [main-SendThread(zookeeper:2181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server zookeeper/172.18.0.2:2181, sessionid = 0x1000145a2b30000, negotiated timeout = 40000
+[32mschema-registry     |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x1000145a2b30000 closed
+[32mschema-registry     |[0m [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x1000145a2b30000
+[32mschema-registry     |[0m ===> Check if Kafka is healthy ...
+[32mschema-registry     |[0m [main] INFO org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+[32mschema-registry     |[0m 	bootstrap.servers = [SSL://broker:9092]
+[32mschema-registry     |[0m 	client.dns.lookup = default
+[32mschema-registry     |[0m 	client.id = 
+[32mschema-registry     |[0m 	connections.max.idle.ms = 300000
+[32mschema-registry     |[0m 	metadata.max.age.ms = 300000
+[32mschema-registry     |[0m 	metric.reporters = []
+[32mschema-registry     |[0m 	metrics.num.samples = 2
+[32mschema-registry     |[0m 	metrics.recording.level = INFO
+[32mschema-registry     |[0m 	metrics.sample.window.ms = 30000
+[32mschema-registry     |[0m 	receive.buffer.bytes = 65536
+[32mschema-registry     |[0m 	reconnect.backoff.max.ms = 1000
+[32mschema-registry     |[0m 	reconnect.backoff.ms = 50
+[32mschema-registry     |[0m 	request.timeout.ms = 120000
+[32mschema-registry     |[0m 	retries = 5
+[32mschema-registry     |[0m 	retry.backoff.ms = 100
+[32mschema-registry     |[0m 	sasl.client.callback.handler.class = null
+[32mschema-registry     |[0m 	sasl.jaas.config = null
+[32mschema-registry     |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[32mschema-registry     |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[32mschema-registry     |[0m 	sasl.kerberos.service.name = null
+[32mschema-registry     |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[32mschema-registry     |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[32mschema-registry     |[0m 	sasl.login.callback.handler.class = null
+[32mschema-registry     |[0m 	sasl.login.class = null
+[32mschema-registry     |[0m 	sasl.login.refresh.buffer.seconds = 300
+[32mschema-registry     |[0m 	sasl.login.refresh.min.period.seconds = 60
+[32mschema-registry     |[0m 	sasl.login.refresh.window.factor = 0.8
+[32mschema-registry     |[0m 	sasl.login.refresh.window.jitter = 0.05
+[32mschema-registry     |[0m 	sasl.mechanism = GSSAPI
+[32mschema-registry     |[0m 	security.protocol = SSL
+[32mschema-registry     |[0m 	security.providers = null
+[32mschema-registry     |[0m 	send.buffer.bytes = 131072
+[32mschema-registry     |[0m 	ssl.cipher.suites = null
+[32mschema-registry     |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[32mschema-registry     |[0m 	ssl.endpoint.identification.algorithm = https
+[32mschema-registry     |[0m 	ssl.key.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keymanager.algorithm = SunX509
+[32mschema-registry     |[0m 	ssl.keystore.location = /etc/schema-registry/secrets/schema-registry.keystore.jks
+[32mschema-registry     |[0m 	ssl.keystore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keystore.type = JKS
+[32mschema-registry     |[0m 	ssl.protocol = TLS
+[32mschema-registry     |[0m 	ssl.provider = null
+[32mschema-registry     |[0m 	ssl.secure.random.implementation = null
+[32mschema-registry     |[0m 	ssl.trustmanager.algorithm = PKIX
+[32mschema-registry     |[0m 	ssl.truststore.location = /etc/schema-registry/secrets/schema-registry.truststore.jks
+[32mschema-registry     |[0m 	ssl.truststore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.truststore.type = JKS
+[32mschema-registry     |[0m 
+[32mschema-registry     |[0m [main] WARN org.apache.kafka.clients.admin.AdminClientConfig - The configuration 'topic' was supplied but isn't a known config.
+[32mschema-registry     |[0m [main] WARN org.apache.kafka.clients.admin.AdminClientConfig - The configuration 'connection.url' was supplied but isn't a known config.
+[32mschema-registry     |[0m [main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 5.4.1-ccs
+[32mschema-registry     |[0m [main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: bd7407ab4c5d30c1
+[32mschema-registry     |[0m [main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1586807052714
+[32mschema-registry     |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/172.18.0.5:9092) could not be established. Broker may not be available.
+[32mschema-registry     |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/172.18.0.5:9092) could not be established. Broker may not be available.
+[32mschema-registry     |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/172.18.0.5:9092) could not be established. Broker may not be available.
+[32mschema-registry     |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/172.18.0.5:9092) could not be established. Broker may not be available.
+[36mbroker              |[0m ===> Running preflight checks ... 
+[36mbroker              |[0m ===> Check if /var/lib/kafka/data is writable ...
+[36mbroker              |[0m ===> Check if Zookeeper is healthy ...
+[32mschema-registry     |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/172.18.0.5:9092) could not be established. Broker may not be available.
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.5.6-c11b7e26bc554b8523dc929761dd28808913f091, built on 10/08/2019 20:18 GMT
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:host.name=broker
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_212
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Azul Systems, Inc.
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.home=/usr/lib/jvm/zulu-8-amd64/jre
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/etc/confluent/docker/docker-utils.jar
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/tmp
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.name=Linux
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.version=4.19.76-linuxkit
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.name=root
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.home=/root
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.free=117MB
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.max=1771MB
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.total=121MB
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=zookeeper:2181 sessionTimeout=40000 watcher=io.confluent.admin.utils.ZookeeperConnectionWatcher@cc34f4d
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.common.X509Util - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ClientCnxnSocket - jute.maxbuffer value is 4194304 Bytes
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ClientCnxn - zookeeper.request.timeout value is 0. feature enabled=
+[36mbroker              |[0m [main-SendThread(zookeeper:2181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server zookeeper/172.18.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+[36mbroker              |[0m [main-SendThread(zookeeper:2181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established, initiating session, client: /172.18.0.5:33736, server: zookeeper/172.18.0.2:2181
+[36mbroker              |[0m [main-SendThread(zookeeper:2181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server zookeeper/172.18.0.2:2181, sessionid = 0x1000145a2b30001, negotiated timeout = 40000
+[36mbroker              |[0m [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x1000145a2b30001 closed
+[36mbroker              |[0m [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x1000145a2b30001
+[36mbroker              |[0m ===> Launching ... 
+[36mbroker              |[0m ===> Launching kafka ... 
+[36mbroker              |[0m [2020-04-13 19:44:14,357] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[32mschema-registry     |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/172.18.0.5:9092) could not be established. Broker may not be available.
+[36mbroker              |[0m [2020-04-13 19:44:14,625] INFO KafkaConfig values: 
+[36mbroker              |[0m 	advertised.host.name = null
+[36mbroker              |[0m 	advertised.listeners = SSL://broker:9092
+[36mbroker              |[0m 	advertised.port = null
+[36mbroker              |[0m 	alter.config.policy.class.name = null
+[36mbroker              |[0m 	alter.log.dirs.replication.quota.window.num = 11
+[36mbroker              |[0m 	alter.log.dirs.replication.quota.window.size.seconds = 1
+[36mbroker              |[0m 	authorizer.class.name = 
+[36mbroker              |[0m 	auto.create.topics.enable = true
+[36mbroker              |[0m 	auto.leader.rebalance.enable = true
+[36mbroker              |[0m 	background.threads = 10
+[36mbroker              |[0m 	broker.id = 1
+[36mbroker              |[0m 	broker.id.generation.enable = true
+[36mbroker              |[0m 	broker.rack = null
+[36mbroker              |[0m 	client.quota.callback.class = null
+[36mbroker              |[0m 	compression.type = producer
+[36mbroker              |[0m 	connection.failed.authentication.delay.ms = 100
+[36mbroker              |[0m 	connections.max.idle.ms = 600000
+[36mbroker              |[0m 	connections.max.reauth.ms = 0
+[36mbroker              |[0m 	control.plane.listener.name = null
+[36mbroker              |[0m 	controlled.shutdown.enable = true
+[36mbroker              |[0m 	controlled.shutdown.max.retries = 3
+[36mbroker              |[0m 	controlled.shutdown.retry.backoff.ms = 5000
+[36mbroker              |[0m 	controller.socket.timeout.ms = 30000
+[36mbroker              |[0m 	create.topic.policy.class.name = null
+[36mbroker              |[0m 	default.replication.factor = 1
+[36mbroker              |[0m 	delegation.token.expiry.check.interval.ms = 3600000
+[36mbroker              |[0m 	delegation.token.expiry.time.ms = 86400000
+[36mbroker              |[0m 	delegation.token.master.key = null
+[36mbroker              |[0m 	delegation.token.max.lifetime.ms = 604800000
+[36mbroker              |[0m 	delete.records.purgatory.purge.interval.requests = 1
+[36mbroker              |[0m 	delete.topic.enable = true
+[36mbroker              |[0m 	fetch.purgatory.purge.interval.requests = 1000
+[36mbroker              |[0m 	group.initial.rebalance.delay.ms = 3000
+[36mbroker              |[0m 	group.max.session.timeout.ms = 1800000
+[36mbroker              |[0m 	group.max.size = 2147483647
+[36mbroker              |[0m 	group.min.session.timeout.ms = 6000
+[36mbroker              |[0m 	host.name = 
+[36mbroker              |[0m 	inter.broker.listener.name = null
+[36mbroker              |[0m 	inter.broker.protocol.version = 2.4-IV1
+[36mbroker              |[0m 	kafka.metrics.polling.interval.secs = 10
+[36mbroker              |[0m 	kafka.metrics.reporters = []
+[36mbroker              |[0m 	leader.imbalance.check.interval.seconds = 300
+[36mbroker              |[0m 	leader.imbalance.per.broker.percentage = 10
+[36mbroker              |[0m 	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+[36mbroker              |[0m 	listeners = SSL://0.0.0.0:9092
+[36mbroker              |[0m 	log.cleaner.backoff.ms = 15000
+[36mbroker              |[0m 	log.cleaner.dedupe.buffer.size = 134217728
+[36mbroker              |[0m 	log.cleaner.delete.retention.ms = 86400000
+[36mbroker              |[0m 	log.cleaner.enable = true
+[36mbroker              |[0m 	log.cleaner.io.buffer.load.factor = 0.9
+[36mbroker              |[0m 	log.cleaner.io.buffer.size = 524288
+[36mbroker              |[0m 	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+[36mbroker              |[0m 	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+[36mbroker              |[0m 	log.cleaner.min.cleanable.ratio = 0.5
+[36mbroker              |[0m 	log.cleaner.min.compaction.lag.ms = 0
+[36mbroker              |[0m 	log.cleaner.threads = 1
+[36mbroker              |[0m 	log.cleanup.policy = [delete]
+[36mbroker              |[0m 	log.dir = /tmp/kafka-logs
+[36mbroker              |[0m 	log.dirs = /var/lib/kafka/data
+[36mbroker              |[0m 	log.flush.interval.messages = 9223372036854775807
+[36mbroker              |[0m 	log.flush.interval.ms = null
+[36mbroker              |[0m 	log.flush.offset.checkpoint.interval.ms = 60000
+[36mbroker              |[0m 	log.flush.scheduler.interval.ms = 9223372036854775807
+[36mbroker              |[0m 	log.flush.start.offset.checkpoint.interval.ms = 60000
+[36mbroker              |[0m 	log.index.interval.bytes = 4096
+[36mbroker              |[0m 	log.index.size.max.bytes = 10485760
+[36mbroker              |[0m 	log.message.downconversion.enable = true
+[36mbroker              |[0m 	log.message.format.version = 2.4-IV1
+[36mbroker              |[0m 	log.message.timestamp.difference.max.ms = 9223372036854775807
+[36mbroker              |[0m 	log.message.timestamp.type = CreateTime
+[36mbroker              |[0m 	log.preallocate = false
+[36mbroker              |[0m 	log.retention.bytes = -1
+[36mbroker              |[0m 	log.retention.check.interval.ms = 300000
+[36mbroker              |[0m 	log.retention.hours = 168
+[36mbroker              |[0m 	log.retention.minutes = null
+[36mbroker              |[0m 	log.retention.ms = null
+[36mbroker              |[0m 	log.roll.hours = 168
+[36mbroker              |[0m 	log.roll.jitter.hours = 0
+[36mbroker              |[0m 	log.roll.jitter.ms = null
+[36mbroker              |[0m 	log.roll.ms = null
+[36mbroker              |[0m 	log.segment.bytes = 1073741824
+[36mbroker              |[0m 	log.segment.delete.delay.ms = 60000
+[36mbroker              |[0m 	max.connections = 2147483647
+[36mbroker              |[0m 	max.connections.per.ip = 2147483647
+[36mbroker              |[0m 	max.connections.per.ip.overrides = 
+[36mbroker              |[0m 	max.incremental.fetch.session.cache.slots = 1000
+[36mbroker              |[0m 	message.max.bytes = 1000012
+[36mbroker              |[0m 	metric.reporters = []
+[36mbroker              |[0m 	metrics.num.samples = 2
+[36mbroker              |[0m 	metrics.recording.level = INFO
+[36mbroker              |[0m 	metrics.sample.window.ms = 30000
+[36mbroker              |[0m 	min.insync.replicas = 1
+[36mbroker              |[0m 	num.io.threads = 8
+[36mbroker              |[0m 	num.network.threads = 3
+[36mbroker              |[0m 	num.partitions = 1
+[36mbroker              |[0m 	num.recovery.threads.per.data.dir = 1
+[36mbroker              |[0m 	num.replica.alter.log.dirs.threads = null
+[36mbroker              |[0m 	num.replica.fetchers = 1
+[36mbroker              |[0m 	offset.metadata.max.bytes = 4096
+[36mbroker              |[0m 	offsets.commit.required.acks = -1
+[36mbroker              |[0m 	offsets.commit.timeout.ms = 5000
+[36mbroker              |[0m 	offsets.load.buffer.size = 5242880
+[36mbroker              |[0m 	offsets.retention.check.interval.ms = 600000
+[36mbroker              |[0m 	offsets.retention.minutes = 10080
+[36mbroker              |[0m 	offsets.topic.compression.codec = 0
+[36mbroker              |[0m 	offsets.topic.num.partitions = 50
+[36mbroker              |[0m 	offsets.topic.replication.factor = 1
+[36mbroker              |[0m 	offsets.topic.segment.bytes = 104857600
+[36mbroker              |[0m 	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+[36mbroker              |[0m 	password.encoder.iterations = 4096
+[36mbroker              |[0m 	password.encoder.key.length = 128
+[36mbroker              |[0m 	password.encoder.keyfactory.algorithm = null
+[36mbroker              |[0m 	password.encoder.old.secret = null
+[36mbroker              |[0m 	password.encoder.secret = null
+[36mbroker              |[0m 	port = 9092
+[36mbroker              |[0m 	principal.builder.class = null
+[36mbroker              |[0m 	producer.purgatory.purge.interval.requests = 1000
+[36mbroker              |[0m 	queued.max.request.bytes = -1
+[36mbroker              |[0m 	queued.max.requests = 500
+[36mbroker              |[0m 	quota.consumer.default = 9223372036854775807
+[36mbroker              |[0m 	quota.producer.default = 9223372036854775807
+[36mbroker              |[0m 	quota.window.num = 11
+[36mbroker              |[0m 	quota.window.size.seconds = 1
+[36mbroker              |[0m 	replica.fetch.backoff.ms = 1000
+[36mbroker              |[0m 	replica.fetch.max.bytes = 1048576
+[36mbroker              |[0m 	replica.fetch.min.bytes = 1
+[36mbroker              |[0m 	replica.fetch.response.max.bytes = 10485760
+[36mbroker              |[0m 	replica.fetch.wait.max.ms = 500
+[36mbroker              |[0m 	replica.high.watermark.checkpoint.interval.ms = 5000
+[36mbroker              |[0m 	replica.lag.time.max.ms = 10000
+[36mbroker              |[0m 	replica.selector.class = null
+[36mbroker              |[0m 	replica.socket.receive.buffer.bytes = 65536
+[36mbroker              |[0m 	replica.socket.timeout.ms = 30000
+[36mbroker              |[0m 	replication.quota.window.num = 11
+[36mbroker              |[0m 	replication.quota.window.size.seconds = 1
+[36mbroker              |[0m 	request.timeout.ms = 30000
+[36mbroker              |[0m 	reserved.broker.max.id = 1000
+[36mbroker              |[0m 	sasl.client.callback.handler.class = null
+[36mbroker              |[0m 	sasl.enabled.mechanisms = [GSSAPI]
+[36mbroker              |[0m 	sasl.jaas.config = null
+[36mbroker              |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[36mbroker              |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[36mbroker              |[0m 	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+[36mbroker              |[0m 	sasl.kerberos.service.name = null
+[36mbroker              |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[36mbroker              |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[36mbroker              |[0m 	sasl.login.callback.handler.class = null
+[36mbroker              |[0m 	sasl.login.class = null
+[36mbroker              |[0m 	sasl.login.refresh.buffer.seconds = 300
+[36mbroker              |[0m 	sasl.login.refresh.min.period.seconds = 60
+[36mbroker              |[0m 	sasl.login.refresh.window.factor = 0.8
+[36mbroker              |[0m 	sasl.login.refresh.window.jitter = 0.05
+[36mbroker              |[0m 	sasl.mechanism.inter.broker.protocol = GSSAPI
+[36mbroker              |[0m 	sasl.server.callback.handler.class = null
+[36mbroker              |[0m 	security.inter.broker.protocol = SSL
+[36mbroker              |[0m 	security.providers = null
+[36mbroker              |[0m 	socket.receive.buffer.bytes = 102400
+[36mbroker              |[0m 	socket.request.max.bytes = 104857600
+[36mbroker              |[0m 	socket.send.buffer.bytes = 102400
+[36mbroker              |[0m 	ssl.cipher.suites = []
+[36mbroker              |[0m 	ssl.client.auth = required
+[36mbroker              |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[36mbroker              |[0m 	ssl.endpoint.identification.algorithm = https
+[36mbroker              |[0m 	ssl.key.password = [hidden]
+[36mbroker              |[0m 	ssl.keymanager.algorithm = SunX509
+[36mbroker              |[0m 	ssl.keystore.location = /etc/kafka/secrets/broker.keystore.jks
+[36mbroker              |[0m 	ssl.keystore.password = [hidden]
+[36mbroker              |[0m 	ssl.keystore.type = JKS
+[36mbroker              |[0m 	ssl.principal.mapping.rules = DEFAULT
+[36mbroker              |[0m 	ssl.protocol = TLS
+[36mbroker              |[0m 	ssl.provider = null
+[36mbroker              |[0m 	ssl.secure.random.implementation = null
+[36mbroker              |[0m 	ssl.trustmanager.algorithm = PKIX
+[36mbroker              |[0m 	ssl.truststore.location = /etc/kafka/secrets/broker.truststore.jks
+[36mbroker              |[0m 	ssl.truststore.password = [hidden]
+[36mbroker              |[0m 	ssl.truststore.type = JKS
+[36mbroker              |[0m 	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+[36mbroker              |[0m 	transaction.max.timeout.ms = 900000
+[36mbroker              |[0m 	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+[36mbroker              |[0m 	transaction.state.log.load.buffer.size = 5242880
+[36mbroker              |[0m 	transaction.state.log.min.isr = 2
+[36mbroker              |[0m 	transaction.state.log.num.partitions = 50
+[36mbroker              |[0m 	transaction.state.log.replication.factor = 3
+[36mbroker              |[0m 	transaction.state.log.segment.bytes = 104857600
+[36mbroker              |[0m 	transactional.id.expiration.ms = 604800000
+[36mbroker              |[0m 	unclean.leader.election.enable = false
+[36mbroker              |[0m 	zookeeper.connect = zookeeper:2181
+[36mbroker              |[0m 	zookeeper.connection.timeout.ms = null
+[36mbroker              |[0m 	zookeeper.max.in.flight.requests = 10
+[36mbroker              |[0m 	zookeeper.session.timeout.ms = 6000
+[36mbroker              |[0m 	zookeeper.set.acl = false
+[36mbroker              |[0m 	zookeeper.sync.time.ms = 2000
+[36mbroker              |[0m  (kafka.server.KafkaConfig)
+[36mbroker              |[0m [2020-04-13 19:44:14,660] WARN The package io.confluent.support.metrics.collectors.FullCollector for collecting the full set of support metrics could not be loaded, so we are reverting to anonymous, basic metric collection. If you are a Confluent customer, please refer to the Confluent Platform documentation, section Proactive Support, on how to activate full metrics collection. (io.confluent.support.metrics.KafkaSupportConfig)
+[36mbroker              |[0m [2020-04-13 19:44:14,666] WARN Please note that the support metrics collection feature ("Metrics") of Proactive Support is enabled.  With Metrics enabled, this broker is configured to collect and report certain broker and cluster metadata ("Metadata") about your use of the Confluent Platform (including without limitation, your remote internet protocol address) to Confluent, Inc. ("Confluent") or its parent, subsidiaries, affiliates or service providers every 24hours.  This Metadata may be transferred to any country in which Confluent maintains facilities.  For a more in depth discussion of how Confluent processes such information, please read our Privacy Policy located at http://www.confluent.io/privacy. By proceeding with `confluent.support.metrics.enable=true`, you agree to all such collection, transfer, storage and use of Metadata by Confluent.  You can turn the Metrics feature off by setting `confluent.support.metrics.enable=false` in the broker configuration and restarting the broker.  See the Confluent Platform documentation for further information. (io.confluent.support.metrics.SupportedServerStartable)
+[36mbroker              |[0m [2020-04-13 19:44:14,667] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[36mbroker              |[0m [2020-04-13 19:44:14,668] INFO starting (kafka.server.KafkaServer)
+[36mbroker              |[0m [2020-04-13 19:44:14,668] INFO Connecting to zookeeper on zookeeper:2181 (kafka.server.KafkaServer)
+[36mbroker              |[0m [2020-04-13 19:44:14,679] INFO [ZooKeeperClient Kafka server] Initializing a new session to zookeeper:2181. (kafka.zookeeper.ZooKeeperClient)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:zookeeper.version=3.5.7-f0fdd52973d373ffd9c86b81d99842dc2c7f660e, built on 02/10/2020 11:30 GMT (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:host.name=broker (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:java.version=1.8.0_212 (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:java.vendor=Azul Systems, Inc. (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:java.home=/usr/lib/jvm/zulu-8-amd64/jre (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:java.class.path=/usr/bin/../share/java/kafka/commons-compress-1.19.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-test-sources.jar:/usr/bin/../share/java/kafka/jakarta.annotation-api-1.3.4.jar:/usr/bin/../share/java/kafka/kafka-log4j-appender-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/jackson-module-paranamer-2.9.10.jar:/usr/bin/../share/java/kafka/httpclient-4.5.9.jar:/usr/bin/../share/java/kafka/slf4j-log4j12-1.7.28.jar:/usr/bin/../share/java/kafka/kafka.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-2.28.jar:/usr/bin/../share/java/kafka/netty-transport-native-epoll-4.1.45.Final.jar:/usr/bin/../share/java/kafka/commons-logging-1.2.jar:/usr/bin/../share/java/kafka/jackson-annotations-2.9.10.jar:/usr/bin/../share/java/kafka/kafka-tools-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/support-metrics-common-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/validation-api-2.0.1.Final.jar:/usr/bin/../share/java/kafka/scala-java8-compat_2.12-0.9.0.jar:/usr/bin/../share/java/kafka/maven-artifact-3.6.1.jar:/usr/bin/../share/java/kafka/log4j-1.2.17.jar:/usr/bin/../share/java/kafka/jackson-databind-2.9.10.3.jar:/usr/bin/../share/java/kafka/jackson-dataformat-csv-2.9.10.jar:/usr/bin/../share/java/kafka/kafka-streams-scala_2.12-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/hk2-api-2.5.0.jar:/usr/bin/../share/java/kafka/jopt-simple-5.0.4.jar:/usr/bin/../share/java/kafka/jersey-client-2.28.jar:/usr/bin/../share/java/kafka/javassist-3.22.0-CR2.jar:/usr/bin/../share/java/kafka/jetty-continuation-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/reflections-0.9.11.jar:/usr/bin/../share/java/kafka/zookeeper-jute-3.5.7.jar:/usr/bin/../share/java/kafka/paranamer-2.8.jar:/usr/bin/../share/java/kafka/jaxb-api-2.3.0.jar:/usr/bin/../share/java/kafka/netty-common-4.1.45.Final.jar:/usr/bin/../share/java/kafka/jetty-server-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/scala-logging_2.12-3.9.2.jar:/usr/bin/../share/java/kafka/jackson-module-jaxb-annotations-2.9.10.jar:/usr/bin/../share/java/kafka/connect-mirror-client-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/guava-20.0.jar:/usr/bin/../share/java/kafka/jackson-module-scala_2.12-2.9.10.jar:/usr/bin/../share/java/kafka/jetty-io-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/metrics-core-2.2.0.jar:/usr/bin/../share/java/kafka/netty-resolver-4.1.45.Final.jar:/usr/bin/../share/java/kafka/jackson-datatype-jdk8-2.9.10.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-test.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-javadoc.jar:/usr/bin/../share/java/kafka/zookeeper-3.5.7.jar:/usr/bin/../share/java/kafka/jersey-server-2.28.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-core-2.28.jar:/usr/bin/../share/java/kafka/commons-codec-1.11.jar:/usr/bin/../share/java/kafka/jetty-servlets-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/jetty-servlet-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-json-provider-2.9.10.jar:/usr/bin/../share/java/kafka/connect-transforms-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/scala-collection-compat_2.12-2.1.2.jar:/usr/bin/../share/java/kafka/scala-reflect-2.12.10.jar:/usr/bin/../share/java/kafka/jetty-util-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/argparse4j-0.7.0.jar:/usr/bin/../share/java/kafka/plexus-utils-3.2.0.jar:/usr/bin/../share/java/kafka/jersey-media-jaxb-2.28.jar:/usr/bin/../share/java/kafka/hk2-locator-2.5.0.jar:/usr/bin/../share/java/kafka/netty-codec-4.1.45.Final.jar:/usr/bin/../share/java/kafka/httpmime-4.5.9.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-base-2.9.10.jar:/usr/bin/../share/java/kafka/avro-1.9.1.jar:/usr/bin/../share/java/kafka/slf4j-api-1.7.28.jar:/usr/bin/../share/java/kafka/netty-handler-4.1.45.Final.jar:/usr/bin/../share/java/kafka/jakarta.inject-2.5.0.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-scaladoc.jar:/usr/bin/../share/java/kafka/connect-file-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/connect-basic-auth-extension-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/kafka_2.12-5.4.1-ccs-sources.jar:/usr/bin/../share/java/kafka/jersey-common-2.28.jar:/usr/bin/../share/java/kafka/jersey-hk2-2.28.jar:/usr/bin/../share/java/kafka/osgi-resource-locator-1.0.1.jar:/usr/bin/../share/java/kafka/jackson-core-2.9.10.jar:/usr/bin/../share/java/kafka/netty-buffer-4.1.45.Final.jar:/usr/bin/../share/java/kafka/kafka-streams-test-utils-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/httpcore-4.4.11.jar:/usr/bin/../share/java/kafka/javax.servlet-api-3.1.0.jar:/usr/bin/../share/java/kafka/kafka-streams-examples-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/netty-transport-native-unix-common-4.1.45.Final.jar:/usr/bin/../share/java/kafka/kafka-clients-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/hk2-utils-2.5.0.jar:/usr/bin/../share/java/kafka/audience-annotations-0.5.0.jar:/usr/bin/../share/java/kafka/snappy-java-1.1.7.3.jar:/usr/bin/../share/java/kafka/connect-runtime-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/jetty-client-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/commons-lang3-3.8.1.jar:/usr/bin/../share/java/kafka/rocksdbjni-5.18.3.jar:/usr/bin/../share/java/kafka/jetty-security-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/jakarta.ws.rs-api-2.1.5.jar:/usr/bin/../share/java/kafka/aopalliance-repackaged-2.5.0.jar:/usr/bin/../share/java/kafka/zstd-jni-1.4.3-1.jar:/usr/bin/../share/java/kafka/netty-transport-4.1.45.Final.jar:/usr/bin/../share/java/kafka/lz4-java-1.6.0.jar:/usr/bin/../share/java/kafka/connect-json-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/scala-library-2.12.10.jar:/usr/bin/../share/java/kafka/connect-mirror-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/connect-api-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/javax.ws.rs-api-2.1.1.jar:/usr/bin/../share/java/kafka/commons-cli-1.4.jar:/usr/bin/../share/java/kafka/activation-1.1.1.jar:/usr/bin/../share/java/kafka/kafka-streams-5.4.1-ccs.jar:/usr/bin/../share/java/kafka/jetty-http-9.4.20.v20190813.jar:/usr/bin/../share/java/kafka/support-metrics-client-5.4.1-ccs.jar:/usr/bin/../support-metrics-client/build/dependant-libs-2.12/*:/usr/bin/../support-metrics-client/build/libs/*:/usr/share/java/support-metrics-client/* (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:os.version=4.19.76-linuxkit (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:user.name=root (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:user.home=/root (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:user.dir=/ (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:os.memory.free=980MB (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:os.memory.max=1024MB (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,682] INFO Client environment:os.memory.total=1024MB (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,684] INFO Initiating client connection, connectString=zookeeper:2181 sessionTimeout=6000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@55b7a4e0 (org.apache.zookeeper.ZooKeeper)
+[36mbroker              |[0m [2020-04-13 19:44:14,686] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[36mbroker              |[0m [2020-04-13 19:44:14,689] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[36mbroker              |[0m [2020-04-13 19:44:14,692] INFO zookeeper.request.timeout value is 0. feature enabled= (org.apache.zookeeper.ClientCnxn)
+[36mbroker              |[0m [2020-04-13 19:44:14,699] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[36mbroker              |[0m [2020-04-13 19:44:14,702] INFO Opening socket connection to server zookeeper/172.18.0.2:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[36mbroker              |[0m [2020-04-13 19:44:14,706] INFO Socket connection established, initiating session, client: /172.18.0.5:33740, server: zookeeper/172.18.0.2:2181 (org.apache.zookeeper.ClientCnxn)
+[36mbroker              |[0m [2020-04-13 19:44:14,710] INFO Session establishment complete on server zookeeper/172.18.0.2:2181, sessionid = 0x1000145a2b30002, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[36mbroker              |[0m [2020-04-13 19:44:14,712] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[36mbroker              |[0m [2020-04-13 19:44:14,852] INFO Cluster ID = f7TzurV3TF2vVUcM9NcCfg (kafka.server.KafkaServer)
+[36mbroker              |[0m [2020-04-13 19:44:14,908] INFO KafkaConfig values: 
+[36mbroker              |[0m 	advertised.host.name = null
+[36mbroker              |[0m 	advertised.listeners = SSL://broker:9092
+[36mbroker              |[0m 	advertised.port = null
+[36mbroker              |[0m 	alter.config.policy.class.name = null
+[36mbroker              |[0m 	alter.log.dirs.replication.quota.window.num = 11
+[36mbroker              |[0m 	alter.log.dirs.replication.quota.window.size.seconds = 1
+[36mbroker              |[0m 	authorizer.class.name = 
+[36mbroker              |[0m 	auto.create.topics.enable = true
+[36mbroker              |[0m 	auto.leader.rebalance.enable = true
+[36mbroker              |[0m 	background.threads = 10
+[36mbroker              |[0m 	broker.id = 1
+[36mbroker              |[0m 	broker.id.generation.enable = true
+[36mbroker              |[0m 	broker.rack = null
+[36mbroker              |[0m 	client.quota.callback.class = null
+[36mbroker              |[0m 	compression.type = producer
+[36mbroker              |[0m 	connection.failed.authentication.delay.ms = 100
+[36mbroker              |[0m 	connections.max.idle.ms = 600000
+[36mbroker              |[0m 	connections.max.reauth.ms = 0
+[36mbroker              |[0m 	control.plane.listener.name = null
+[36mbroker              |[0m 	controlled.shutdown.enable = true
+[36mbroker              |[0m 	controlled.shutdown.max.retries = 3
+[36mbroker              |[0m 	controlled.shutdown.retry.backoff.ms = 5000
+[36mbroker              |[0m 	controller.socket.timeout.ms = 30000
+[36mbroker              |[0m 	create.topic.policy.class.name = null
+[36mbroker              |[0m 	default.replication.factor = 1
+[36mbroker              |[0m 	delegation.token.expiry.check.interval.ms = 3600000
+[36mbroker              |[0m 	delegation.token.expiry.time.ms = 86400000
+[36mbroker              |[0m 	delegation.token.master.key = null
+[36mbroker              |[0m 	delegation.token.max.lifetime.ms = 604800000
+[36mbroker              |[0m 	delete.records.purgatory.purge.interval.requests = 1
+[36mbroker              |[0m 	delete.topic.enable = true
+[36mbroker              |[0m 	fetch.purgatory.purge.interval.requests = 1000
+[36mbroker              |[0m 	group.initial.rebalance.delay.ms = 3000
+[36mbroker              |[0m 	group.max.session.timeout.ms = 1800000
+[36mbroker              |[0m 	group.max.size = 2147483647
+[36mbroker              |[0m 	group.min.session.timeout.ms = 6000
+[36mbroker              |[0m 	host.name = 
+[36mbroker              |[0m 	inter.broker.listener.name = null
+[36mbroker              |[0m 	inter.broker.protocol.version = 2.4-IV1
+[36mbroker              |[0m 	kafka.metrics.polling.interval.secs = 10
+[36mbroker              |[0m 	kafka.metrics.reporters = []
+[36mbroker              |[0m 	leader.imbalance.check.interval.seconds = 300
+[36mbroker              |[0m 	leader.imbalance.per.broker.percentage = 10
+[36mbroker              |[0m 	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+[36mbroker              |[0m 	listeners = SSL://0.0.0.0:9092
+[36mbroker              |[0m 	log.cleaner.backoff.ms = 15000
+[36mbroker              |[0m 	log.cleaner.dedupe.buffer.size = 134217728
+[36mbroker              |[0m 	log.cleaner.delete.retention.ms = 86400000
+[36mbroker              |[0m 	log.cleaner.enable = true
+[36mbroker              |[0m 	log.cleaner.io.buffer.load.factor = 0.9
+[36mbroker              |[0m 	log.cleaner.io.buffer.size = 524288
+[36mbroker              |[0m 	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+[36mbroker              |[0m 	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+[36mbroker              |[0m 	log.cleaner.min.cleanable.ratio = 0.5
+[36mbroker              |[0m 	log.cleaner.min.compaction.lag.ms = 0
+[36mbroker              |[0m 	log.cleaner.threads = 1
+[36mbroker              |[0m 	log.cleanup.policy = [delete]
+[36mbroker              |[0m 	log.dir = /tmp/kafka-logs
+[36mbroker              |[0m 	log.dirs = /var/lib/kafka/data
+[36mbroker              |[0m 	log.flush.interval.messages = 9223372036854775807
+[36mbroker              |[0m 	log.flush.interval.ms = null
+[36mbroker              |[0m 	log.flush.offset.checkpoint.interval.ms = 60000
+[36mbroker              |[0m 	log.flush.scheduler.interval.ms = 9223372036854775807
+[36mbroker              |[0m 	log.flush.start.offset.checkpoint.interval.ms = 60000
+[36mbroker              |[0m 	log.index.interval.bytes = 4096
+[36mbroker              |[0m 	log.index.size.max.bytes = 10485760
+[36mbroker              |[0m 	log.message.downconversion.enable = true
+[36mbroker              |[0m 	log.message.format.version = 2.4-IV1
+[36mbroker              |[0m 	log.message.timestamp.difference.max.ms = 9223372036854775807
+[36mbroker              |[0m 	log.message.timestamp.type = CreateTime
+[36mbroker              |[0m 	log.preallocate = false
+[36mbroker              |[0m 	log.retention.bytes = -1
+[36mbroker              |[0m 	log.retention.check.interval.ms = 300000
+[36mbroker              |[0m 	log.retention.hours = 168
+[36mbroker              |[0m 	log.retention.minutes = null
+[36mbroker              |[0m 	log.retention.ms = null
+[36mbroker              |[0m 	log.roll.hours = 168
+[36mbroker              |[0m 	log.roll.jitter.hours = 0
+[36mbroker              |[0m 	log.roll.jitter.ms = null
+[36mbroker              |[0m 	log.roll.ms = null
+[36mbroker              |[0m 	log.segment.bytes = 1073741824
+[36mbroker              |[0m 	log.segment.delete.delay.ms = 60000
+[36mbroker              |[0m 	max.connections = 2147483647
+[36mbroker              |[0m 	max.connections.per.ip = 2147483647
+[36mbroker              |[0m 	max.connections.per.ip.overrides = 
+[36mbroker              |[0m 	max.incremental.fetch.session.cache.slots = 1000
+[36mbroker              |[0m 	message.max.bytes = 1000012
+[36mbroker              |[0m 	metric.reporters = []
+[36mbroker              |[0m 	metrics.num.samples = 2
+[36mbroker              |[0m 	metrics.recording.level = INFO
+[36mbroker              |[0m 	metrics.sample.window.ms = 30000
+[36mbroker              |[0m 	min.insync.replicas = 1
+[36mbroker              |[0m 	num.io.threads = 8
+[36mbroker              |[0m 	num.network.threads = 3
+[36mbroker              |[0m 	num.partitions = 1
+[36mbroker              |[0m 	num.recovery.threads.per.data.dir = 1
+[36mbroker              |[0m 	num.replica.alter.log.dirs.threads = null
+[36mbroker              |[0m 	num.replica.fetchers = 1
+[36mbroker              |[0m 	offset.metadata.max.bytes = 4096
+[36mbroker              |[0m 	offsets.commit.required.acks = -1
+[36mbroker              |[0m 	offsets.commit.timeout.ms = 5000
+[36mbroker              |[0m 	offsets.load.buffer.size = 5242880
+[36mbroker              |[0m 	offsets.retention.check.interval.ms = 600000
+[36mbroker              |[0m 	offsets.retention.minutes = 10080
+[36mbroker              |[0m 	offsets.topic.compression.codec = 0
+[36mbroker              |[0m 	offsets.topic.num.partitions = 50
+[36mbroker              |[0m 	offsets.topic.replication.factor = 1
+[36mbroker              |[0m 	offsets.topic.segment.bytes = 104857600
+[36mbroker              |[0m 	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+[36mbroker              |[0m 	password.encoder.iterations = 4096
+[36mbroker              |[0m 	password.encoder.key.length = 128
+[36mbroker              |[0m 	password.encoder.keyfactory.algorithm = null
+[36mbroker              |[0m 	password.encoder.old.secret = null
+[36mbroker              |[0m 	password.encoder.secret = null
+[36mbroker              |[0m 	port = 9092
+[36mbroker              |[0m 	principal.builder.class = null
+[36mbroker              |[0m 	producer.purgatory.purge.interval.requests = 1000
+[36mbroker              |[0m 	queued.max.request.bytes = -1
+[36mbroker              |[0m 	queued.max.requests = 500
+[36mbroker              |[0m 	quota.consumer.default = 9223372036854775807
+[36mbroker              |[0m 	quota.producer.default = 9223372036854775807
+[36mbroker              |[0m 	quota.window.num = 11
+[36mbroker              |[0m 	quota.window.size.seconds = 1
+[36mbroker              |[0m 	replica.fetch.backoff.ms = 1000
+[36mbroker              |[0m 	replica.fetch.max.bytes = 1048576
+[36mbroker              |[0m 	replica.fetch.min.bytes = 1
+[36mbroker              |[0m 	replica.fetch.response.max.bytes = 10485760
+[36mbroker              |[0m 	replica.fetch.wait.max.ms = 500
+[36mbroker              |[0m 	replica.high.watermark.checkpoint.interval.ms = 5000
+[36mbroker              |[0m 	replica.lag.time.max.ms = 10000
+[36mbroker              |[0m 	replica.selector.class = null
+[36mbroker              |[0m 	replica.socket.receive.buffer.bytes = 65536
+[36mbroker              |[0m 	replica.socket.timeout.ms = 30000
+[36mbroker              |[0m 	replication.quota.window.num = 11
+[36mbroker              |[0m 	replication.quota.window.size.seconds = 1
+[36mbroker              |[0m 	request.timeout.ms = 30000
+[36mbroker              |[0m 	reserved.broker.max.id = 1000
+[36mbroker              |[0m 	sasl.client.callback.handler.class = null
+[36mbroker              |[0m 	sasl.enabled.mechanisms = [GSSAPI]
+[36mbroker              |[0m 	sasl.jaas.config = null
+[36mbroker              |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[36mbroker              |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[36mbroker              |[0m 	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+[36mbroker              |[0m 	sasl.kerberos.service.name = null
+[36mbroker              |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[36mbroker              |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[36mbroker              |[0m 	sasl.login.callback.handler.class = null
+[36mbroker              |[0m 	sasl.login.class = null
+[36mbroker              |[0m 	sasl.login.refresh.buffer.seconds = 300
+[36mbroker              |[0m 	sasl.login.refresh.min.period.seconds = 60
+[36mbroker              |[0m 	sasl.login.refresh.window.factor = 0.8
+[36mbroker              |[0m 	sasl.login.refresh.window.jitter = 0.05
+[36mbroker              |[0m 	sasl.mechanism.inter.broker.protocol = GSSAPI
+[36mbroker              |[0m 	sasl.server.callback.handler.class = null
+[36mbroker              |[0m 	security.inter.broker.protocol = SSL
+[36mbroker              |[0m 	security.providers = null
+[36mbroker              |[0m 	socket.receive.buffer.bytes = 102400
+[36mbroker              |[0m 	socket.request.max.bytes = 104857600
+[36mbroker              |[0m 	socket.send.buffer.bytes = 102400
+[36mbroker              |[0m 	ssl.cipher.suites = []
+[36mbroker              |[0m 	ssl.client.auth = required
+[36mbroker              |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[36mbroker              |[0m 	ssl.endpoint.identification.algorithm = https
+[36mbroker              |[0m 	ssl.key.password = [hidden]
+[36mbroker              |[0m 	ssl.keymanager.algorithm = SunX509
+[36mbroker              |[0m 	ssl.keystore.location = /etc/kafka/secrets/broker.keystore.jks
+[36mbroker              |[0m 	ssl.keystore.password = [hidden]
+[36mbroker              |[0m 	ssl.keystore.type = JKS
+[36mbroker              |[0m 	ssl.principal.mapping.rules = DEFAULT
+[36mbroker              |[0m 	ssl.protocol = TLS
+[36mbroker              |[0m 	ssl.provider = null
+[36mbroker              |[0m 	ssl.secure.random.implementation = null
+[36mbroker              |[0m 	ssl.trustmanager.algorithm = PKIX
+[36mbroker              |[0m 	ssl.truststore.location = /etc/kafka/secrets/broker.truststore.jks
+[36mbroker              |[0m 	ssl.truststore.password = [hidden]
+[36mbroker              |[0m 	ssl.truststore.type = JKS
+[36mbroker              |[0m 	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+[36mbroker              |[0m 	transaction.max.timeout.ms = 900000
+[36mbroker              |[0m 	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+[36mbroker              |[0m 	transaction.state.log.load.buffer.size = 5242880
+[36mbroker              |[0m 	transaction.state.log.min.isr = 2
+[36mbroker              |[0m 	transaction.state.log.num.partitions = 50
+[36mbroker              |[0m 	transaction.state.log.replication.factor = 3
+[36mbroker              |[0m 	transaction.state.log.segment.bytes = 104857600
+[36mbroker              |[0m 	transactional.id.expiration.ms = 604800000
+[36mbroker              |[0m 	unclean.leader.election.enable = false
+[36mbroker              |[0m 	zookeeper.connect = zookeeper:2181
+[36mbroker              |[0m 	zookeeper.connection.timeout.ms = null
+[36mbroker              |[0m 	zookeeper.max.in.flight.requests = 10
+[36mbroker              |[0m 	zookeeper.session.timeout.ms = 6000
+[36mbroker              |[0m 	zookeeper.set.acl = false
+[36mbroker              |[0m 	zookeeper.sync.time.ms = 2000
+[36mbroker              |[0m  (kafka.server.KafkaConfig)
+[36mbroker              |[0m [2020-04-13 19:44:14,915] INFO KafkaConfig values: 
+[36mbroker              |[0m 	advertised.host.name = null
+[36mbroker              |[0m 	advertised.listeners = SSL://broker:9092
+[36mbroker              |[0m 	advertised.port = null
+[36mbroker              |[0m 	alter.config.policy.class.name = null
+[36mbroker              |[0m 	alter.log.dirs.replication.quota.window.num = 11
+[36mbroker              |[0m 	alter.log.dirs.replication.quota.window.size.seconds = 1
+[36mbroker              |[0m 	authorizer.class.name = 
+[36mbroker              |[0m 	auto.create.topics.enable = true
+[36mbroker              |[0m 	auto.leader.rebalance.enable = true
+[36mbroker              |[0m 	background.threads = 10
+[36mbroker              |[0m 	broker.id = 1
+[36mbroker              |[0m 	broker.id.generation.enable = true
+[36mbroker              |[0m 	broker.rack = null
+[36mbroker              |[0m 	client.quota.callback.class = null
+[36mbroker              |[0m 	compression.type = producer
+[36mbroker              |[0m 	connection.failed.authentication.delay.ms = 100
+[36mbroker              |[0m 	connections.max.idle.ms = 600000
+[36mbroker              |[0m 	connections.max.reauth.ms = 0
+[36mbroker              |[0m 	control.plane.listener.name = null
+[36mbroker              |[0m 	controlled.shutdown.enable = true
+[36mbroker              |[0m 	controlled.shutdown.max.retries = 3
+[36mbroker              |[0m 	controlled.shutdown.retry.backoff.ms = 5000
+[36mbroker              |[0m 	controller.socket.timeout.ms = 30000
+[36mbroker              |[0m 	create.topic.policy.class.name = null
+[36mbroker              |[0m 	default.replication.factor = 1
+[36mbroker              |[0m 	delegation.token.expiry.check.interval.ms = 3600000
+[36mbroker              |[0m 	delegation.token.expiry.time.ms = 86400000
+[36mbroker              |[0m 	delegation.token.master.key = null
+[36mbroker              |[0m 	delegation.token.max.lifetime.ms = 604800000
+[36mbroker              |[0m 	delete.records.purgatory.purge.interval.requests = 1
+[36mbroker              |[0m 	delete.topic.enable = true
+[36mbroker              |[0m 	fetch.purgatory.purge.interval.requests = 1000
+[36mbroker              |[0m 	group.initial.rebalance.delay.ms = 3000
+[36mbroker              |[0m 	group.max.session.timeout.ms = 1800000
+[36mbroker              |[0m 	group.max.size = 2147483647
+[36mbroker              |[0m 	group.min.session.timeout.ms = 6000
+[36mbroker              |[0m 	host.name = 
+[36mbroker              |[0m 	inter.broker.listener.name = null
+[36mbroker              |[0m 	inter.broker.protocol.version = 2.4-IV1
+[36mbroker              |[0m 	kafka.metrics.polling.interval.secs = 10
+[36mbroker              |[0m 	kafka.metrics.reporters = []
+[36mbroker              |[0m 	leader.imbalance.check.interval.seconds = 300
+[36mbroker              |[0m 	leader.imbalance.per.broker.percentage = 10
+[36mbroker              |[0m 	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+[36mbroker              |[0m 	listeners = SSL://0.0.0.0:9092
+[36mbroker              |[0m 	log.cleaner.backoff.ms = 15000
+[36mbroker              |[0m 	log.cleaner.dedupe.buffer.size = 134217728
+[36mbroker              |[0m 	log.cleaner.delete.retention.ms = 86400000
+[36mbroker              |[0m 	log.cleaner.enable = true
+[36mbroker              |[0m 	log.cleaner.io.buffer.load.factor = 0.9
+[36mbroker              |[0m 	log.cleaner.io.buffer.size = 524288
+[36mbroker              |[0m 	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+[36mbroker              |[0m 	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+[36mbroker              |[0m 	log.cleaner.min.cleanable.ratio = 0.5
+[36mbroker              |[0m 	log.cleaner.min.compaction.lag.ms = 0
+[36mbroker              |[0m 	log.cleaner.threads = 1
+[36mbroker              |[0m 	log.cleanup.policy = [delete]
+[36mbroker              |[0m 	log.dir = /tmp/kafka-logs
+[36mbroker              |[0m 	log.dirs = /var/lib/kafka/data
+[36mbroker              |[0m 	log.flush.interval.messages = 9223372036854775807
+[36mbroker              |[0m 	log.flush.interval.ms = null
+[36mbroker              |[0m 	log.flush.offset.checkpoint.interval.ms = 60000
+[36mbroker              |[0m 	log.flush.scheduler.interval.ms = 9223372036854775807
+[36mbroker              |[0m 	log.flush.start.offset.checkpoint.interval.ms = 60000
+[36mbroker              |[0m 	log.index.interval.bytes = 4096
+[36mbroker              |[0m 	log.index.size.max.bytes = 10485760
+[36mbroker              |[0m 	log.message.downconversion.enable = true
+[36mbroker              |[0m 	log.message.format.version = 2.4-IV1
+[36mbroker              |[0m 	log.message.timestamp.difference.max.ms = 9223372036854775807
+[36mbroker              |[0m 	log.message.timestamp.type = CreateTime
+[36mbroker              |[0m 	log.preallocate = false
+[36mbroker              |[0m 	log.retention.bytes = -1
+[36mbroker              |[0m 	log.retention.check.interval.ms = 300000
+[36mbroker              |[0m 	log.retention.hours = 168
+[36mbroker              |[0m 	log.retention.minutes = null
+[36mbroker              |[0m 	log.retention.ms = null
+[36mbroker              |[0m 	log.roll.hours = 168
+[36mbroker              |[0m 	log.roll.jitter.hours = 0
+[36mbroker              |[0m 	log.roll.jitter.ms = null
+[36mbroker              |[0m 	log.roll.ms = null
+[36mbroker              |[0m 	log.segment.bytes = 1073741824
+[36mbroker              |[0m 	log.segment.delete.delay.ms = 60000
+[36mbroker              |[0m 	max.connections = 2147483647
+[36mbroker              |[0m 	max.connections.per.ip = 2147483647
+[36mbroker              |[0m 	max.connections.per.ip.overrides = 
+[36mbroker              |[0m 	max.incremental.fetch.session.cache.slots = 1000
+[36mbroker              |[0m 	message.max.bytes = 1000012
+[36mbroker              |[0m 	metric.reporters = []
+[36mbroker              |[0m 	metrics.num.samples = 2
+[36mbroker              |[0m 	metrics.recording.level = INFO
+[36mbroker              |[0m 	metrics.sample.window.ms = 30000
+[36mbroker              |[0m 	min.insync.replicas = 1
+[36mbroker              |[0m 	num.io.threads = 8
+[36mbroker              |[0m 	num.network.threads = 3
+[36mbroker              |[0m 	num.partitions = 1
+[36mbroker              |[0m 	num.recovery.threads.per.data.dir = 1
+[36mbroker              |[0m 	num.replica.alter.log.dirs.threads = null
+[36mbroker              |[0m 	num.replica.fetchers = 1
+[36mbroker              |[0m 	offset.metadata.max.bytes = 4096
+[36mbroker              |[0m 	offsets.commit.required.acks = -1
+[36mbroker              |[0m 	offsets.commit.timeout.ms = 5000
+[36mbroker              |[0m 	offsets.load.buffer.size = 5242880
+[36mbroker              |[0m 	offsets.retention.check.interval.ms = 600000
+[36mbroker              |[0m 	offsets.retention.minutes = 10080
+[36mbroker              |[0m 	offsets.topic.compression.codec = 0
+[36mbroker              |[0m 	offsets.topic.num.partitions = 50
+[36mbroker              |[0m 	offsets.topic.replication.factor = 1
+[36mbroker              |[0m 	offsets.topic.segment.bytes = 104857600
+[36mbroker              |[0m 	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+[36mbroker              |[0m 	password.encoder.iterations = 4096
+[36mbroker              |[0m 	password.encoder.key.length = 128
+[36mbroker              |[0m 	password.encoder.keyfactory.algorithm = null
+[36mbroker              |[0m 	password.encoder.old.secret = null
+[36mbroker              |[0m 	password.encoder.secret = null
+[36mbroker              |[0m 	port = 9092
+[36mbroker              |[0m 	principal.builder.class = null
+[36mbroker              |[0m 	producer.purgatory.purge.interval.requests = 1000
+[36mbroker              |[0m 	queued.max.request.bytes = -1
+[36mbroker              |[0m 	queued.max.requests = 500
+[36mbroker              |[0m 	quota.consumer.default = 9223372036854775807
+[36mbroker              |[0m 	quota.producer.default = 9223372036854775807
+[36mbroker              |[0m 	quota.window.num = 11
+[36mbroker              |[0m 	quota.window.size.seconds = 1
+[36mbroker              |[0m 	replica.fetch.backoff.ms = 1000
+[36mbroker              |[0m 	replica.fetch.max.bytes = 1048576
+[36mbroker              |[0m 	replica.fetch.min.bytes = 1
+[36mbroker              |[0m 	replica.fetch.response.max.bytes = 10485760
+[36mbroker              |[0m 	replica.fetch.wait.max.ms = 500
+[36mbroker              |[0m 	replica.high.watermark.checkpoint.interval.ms = 5000
+[36mbroker              |[0m 	replica.lag.time.max.ms = 10000
+[36mbroker              |[0m 	replica.selector.class = null
+[36mbroker              |[0m 	replica.socket.receive.buffer.bytes = 65536
+[36mbroker              |[0m 	replica.socket.timeout.ms = 30000
+[36mbroker              |[0m 	replication.quota.window.num = 11
+[36mbroker              |[0m 	replication.quota.window.size.seconds = 1
+[36mbroker              |[0m 	request.timeout.ms = 30000
+[36mbroker              |[0m 	reserved.broker.max.id = 1000
+[36mbroker              |[0m 	sasl.client.callback.handler.class = null
+[36mbroker              |[0m 	sasl.enabled.mechanisms = [GSSAPI]
+[36mbroker              |[0m 	sasl.jaas.config = null
+[36mbroker              |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[36mbroker              |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[36mbroker              |[0m 	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+[36mbroker              |[0m 	sasl.kerberos.service.name = null
+[36mbroker              |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[36mbroker              |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[36mbroker              |[0m 	sasl.login.callback.handler.class = null
+[36mbroker              |[0m 	sasl.login.class = null
+[36mbroker              |[0m 	sasl.login.refresh.buffer.seconds = 300
+[36mbroker              |[0m 	sasl.login.refresh.min.period.seconds = 60
+[36mbroker              |[0m 	sasl.login.refresh.window.factor = 0.8
+[36mbroker              |[0m 	sasl.login.refresh.window.jitter = 0.05
+[36mbroker              |[0m 	sasl.mechanism.inter.broker.protocol = GSSAPI
+[36mbroker              |[0m 	sasl.server.callback.handler.class = null
+[36mbroker              |[0m 	security.inter.broker.protocol = SSL
+[36mbroker              |[0m 	security.providers = null
+[36mbroker              |[0m 	socket.receive.buffer.bytes = 102400
+[36mbroker              |[0m 	socket.request.max.bytes = 104857600
+[36mbroker              |[0m 	socket.send.buffer.bytes = 102400
+[36mbroker              |[0m 	ssl.cipher.suites = []
+[36mbroker              |[0m 	ssl.client.auth = required
+[36mbroker              |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[36mbroker              |[0m 	ssl.endpoint.identification.algorithm = https
+[36mbroker              |[0m 	ssl.key.password = [hidden]
+[36mbroker              |[0m 	ssl.keymanager.algorithm = SunX509
+[36mbroker              |[0m 	ssl.keystore.location = /etc/kafka/secrets/broker.keystore.jks
+[36mbroker              |[0m 	ssl.keystore.password = [hidden]
+[36mbroker              |[0m 	ssl.keystore.type = JKS
+[36mbroker              |[0m 	ssl.principal.mapping.rules = DEFAULT
+[36mbroker              |[0m 	ssl.protocol = TLS
+[36mbroker              |[0m 	ssl.provider = null
+[36mbroker              |[0m 	ssl.secure.random.implementation = null
+[36mbroker              |[0m 	ssl.trustmanager.algorithm = PKIX
+[36mbroker              |[0m 	ssl.truststore.location = /etc/kafka/secrets/broker.truststore.jks
+[36mbroker              |[0m 	ssl.truststore.password = [hidden]
+[36mbroker              |[0m 	ssl.truststore.type = JKS
+[36mbroker              |[0m 	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+[36mbroker              |[0m 	transaction.max.timeout.ms = 900000
+[36mbroker              |[0m 	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+[36mbroker              |[0m 	transaction.state.log.load.buffer.size = 5242880
+[36mbroker              |[0m 	transaction.state.log.min.isr = 2
+[36mbroker              |[0m 	transaction.state.log.num.partitions = 50
+[36mbroker              |[0m 	transaction.state.log.replication.factor = 3
+[36mbroker              |[0m 	transaction.state.log.segment.bytes = 104857600
+[36mbroker              |[0m 	transactional.id.expiration.ms = 604800000
+[36mbroker              |[0m 	unclean.leader.election.enable = false
+[36mbroker              |[0m 	zookeeper.connect = zookeeper:2181
+[36mbroker              |[0m 	zookeeper.connection.timeout.ms = null
+[36mbroker              |[0m 	zookeeper.max.in.flight.requests = 10
+[36mbroker              |[0m 	zookeeper.session.timeout.ms = 6000
+[36mbroker              |[0m 	zookeeper.set.acl = false
+[36mbroker              |[0m 	zookeeper.sync.time.ms = 2000
+[36mbroker              |[0m  (kafka.server.KafkaConfig)
+[36mbroker              |[0m [2020-04-13 19:44:14,934] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[36mbroker              |[0m [2020-04-13 19:44:14,935] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[36mbroker              |[0m [2020-04-13 19:44:14,936] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[36mbroker              |[0m [2020-04-13 19:44:14,961] INFO Loading logs. (kafka.log.LogManager)
+[36mbroker              |[0m [2020-04-13 19:44:15,010] INFO [Log partition=_schemas-0, dir=/var/lib/kafka/data] Loading producer state till offset 30 with message format version 2 (kafka.log.Log)
+[36mbroker              |[0m [2020-04-13 19:44:15,018] INFO [ProducerStateManager partition=_schemas-0] Loading producer state from snapshot file '/var/lib/kafka/data/_schemas-0/00000000000000000030.snapshot' (kafka.log.ProducerStateManager)
+[36mbroker              |[0m [2020-04-13 19:44:15,026] INFO [Log partition=_schemas-0, dir=/var/lib/kafka/data] Completed load of log with 1 segments, log start offset 0 and log end offset 30 in 51 ms (kafka.log.Log)
+[36mbroker              |[0m [2020-04-13 19:44:15,035] INFO [Log partition=__confluent.support.metrics-0, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[36mbroker              |[0m [2020-04-13 19:44:15,036] INFO [Log partition=__confluent.support.metrics-0, dir=/var/lib/kafka/data] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[36mbroker              |[0m [2020-04-13 19:44:15,040] INFO [Log partition=quotes-0, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[36mbroker              |[0m [2020-04-13 19:44:15,040] INFO [Log partition=quotes-0, dir=/var/lib/kafka/data] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[36mbroker              |[0m [2020-04-13 19:44:15,044] INFO Logs loading complete in 83 ms. (kafka.log.LogManager)
+[36mbroker              |[0m [2020-04-13 19:44:15,056] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[36mbroker              |[0m [2020-04-13 19:44:15,057] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[36mbroker              |[0m [2020-04-13 19:44:15,059] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[36mbroker              |[0m [2020-04-13 19:44:15,100] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
+[36mbroker              |[0m [2020-04-13 19:44:15,294] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[36mbroker              |[0m [2020-04-13 19:44:15,983] INFO [SocketServer brokerId=1] Created data-plane acceptor and processors for endpoint : EndPoint(0.0.0.0,9092,ListenerName(SSL),SSL) (kafka.network.SocketServer)
+[36mbroker              |[0m [2020-04-13 19:44:15,984] INFO [SocketServer brokerId=1] Started 1 acceptor threads for data-plane (kafka.network.SocketServer)
+[36mbroker              |[0m [2020-04-13 19:44:15,996] INFO [ExpirationReaper-1-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36mbroker              |[0m [2020-04-13 19:44:15,997] INFO [ExpirationReaper-1-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36mbroker              |[0m [2020-04-13 19:44:16,000] INFO [ExpirationReaper-1-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36mbroker              |[0m [2020-04-13 19:44:16,003] INFO [ExpirationReaper-1-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36mbroker              |[0m [2020-04-13 19:44:16,009] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[36mbroker              |[0m [2020-04-13 19:44:16,036] INFO Creating /brokers/ids/1 (is it secure? false) (kafka.zk.KafkaZkClient)
+[36mbroker              |[0m [2020-04-13 19:44:16,047] INFO Stat of the created znode at /brokers/ids/1 is: 779,779,1586807056043,1586807056043,1,0,0,72058992631939074,158,0,779
+[36mbroker              |[0m  (kafka.zk.KafkaZkClient)
+[36mbroker              |[0m [2020-04-13 19:44:16,048] INFO Registered broker 1 at path /brokers/ids/1 with addresses: ArrayBuffer(EndPoint(broker,9092,ListenerName(SSL),SSL)), czxid (broker epoch): 779 (kafka.zk.KafkaZkClient)
+[36mbroker              |[0m [2020-04-13 19:44:16,077] INFO [ControllerEventThread controllerId=1] Starting (kafka.controller.ControllerEventManager$ControllerEventThread)
+[36mbroker              |[0m [2020-04-13 19:44:16,085] INFO [ExpirationReaper-1-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36mbroker              |[0m [2020-04-13 19:44:16,087] INFO [ExpirationReaper-1-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36mbroker              |[0m [2020-04-13 19:44:16,091] INFO [ExpirationReaper-1-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36mbroker              |[0m [2020-04-13 19:44:16,094] INFO [Controller id=1] 1 successfully elected as the controller. Epoch incremented to 27 and epoch zk version is now 27 (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,095] INFO [Controller id=1] Registering handlers (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,101] INFO [Controller id=1] Deleting log dir event notifications (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,106] INFO [GroupCoordinator 1]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[36mbroker              |[0m [2020-04-13 19:44:16,108] INFO [Controller id=1] Deleting isr change notifications (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,109] INFO [GroupCoordinator 1]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[36mbroker              |[0m [2020-04-13 19:44:16,110] INFO [Controller id=1] Initializing controller context (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,117] INFO [ProducerId Manager 1]: Acquired new producerId block (brokerId:1,blockStartProducerId:26000,blockEndProducerId:26999) by writing to Zk with path version 27 (kafka.coordinator.transaction.ProducerIdManager)
+[36mbroker              |[0m [2020-04-13 19:44:16,121] INFO [GroupMetadataManager brokerId=1] Removed 0 expired offsets in 10 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[36mbroker              |[0m [2020-04-13 19:44:16,125] INFO [Controller id=1] Initialized broker epochs cache: Map(1 -> 779) (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,140] DEBUG [Controller id=1] Register BrokerModifications handler for Set(1) (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,146] DEBUG [Channel manager on controller 1]: Controller 1 trying to connect to broker 1 (kafka.controller.ControllerChannelManager)
+[36mbroker              |[0m [2020-04-13 19:44:16,269] INFO [TransactionCoordinator id=1] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[36mbroker              |[0m [2020-04-13 19:44:16,270] INFO [Transaction Marker Channel Manager 1]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[36mbroker              |[0m [2020-04-13 19:44:16,270] INFO [TransactionCoordinator id=1] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[36mbroker              |[0m [2020-04-13 19:44:16,292] INFO [RequestSendThread controllerId=1] Starting (kafka.controller.RequestSendThread)
+[36mbroker              |[0m [2020-04-13 19:44:16,292] INFO [Controller id=1] Currently active brokers in the cluster: Set(1) (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,292] INFO [Controller id=1] Currently shutting brokers in the cluster: Set() (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,292] INFO [Controller id=1] Current list of topics in the cluster: Set(__confluent.support.metrics, _schemas, quotes) (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,293] INFO [Controller id=1] Fetching topic deletions in progress (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,297] INFO [Controller id=1] List of topics to be deleted:  (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,297] INFO [Controller id=1] List of topics ineligible for deletion:  (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,297] INFO [Controller id=1] Initializing topic deletion manager (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,298] INFO [Topic Deletion Manager 1] Initializing manager with initial deletions: Set(), initial ineligible deletions: Set() (kafka.controller.TopicDeletionManager)
+[36mbroker              |[0m [2020-04-13 19:44:16,298] INFO [Controller id=1] Sending update metadata request (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,301] INFO [ExpirationReaper-1-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36mbroker              |[0m [2020-04-13 19:44:16,305] INFO [ReplicaStateMachine controllerId=1] Initializing replica state (kafka.controller.ZkReplicaStateMachine)
+[36mbroker              |[0m [2020-04-13 19:44:16,307] INFO [ReplicaStateMachine controllerId=1] Triggering online replica state changes (kafka.controller.ZkReplicaStateMachine)
+[36mbroker              |[0m [2020-04-13 19:44:16,315] TRACE [Controller id=1 epoch=27] Changed state of replica 1 for partition __confluent.support.metrics-0 from OnlineReplica to OnlineReplica (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,316] TRACE [Controller id=1 epoch=27] Changed state of replica 1 for partition quotes-0 from OnlineReplica to OnlineReplica (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,317] TRACE [Controller id=1 epoch=27] Changed state of replica 1 for partition _schemas-0 from OnlineReplica to OnlineReplica (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,318] TRACE [Controller id=1 epoch=27] Sending become-leader LeaderAndIsr request LeaderAndIsrPartitionState(topicName='quotes', partitionIndex=0, controllerEpoch=6, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], addingReplicas=[], removingReplicas=[], isNew=false) to broker 1 for partition quotes-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,318] TRACE [Controller id=1 epoch=27] Sending become-leader LeaderAndIsr request LeaderAndIsrPartitionState(topicName='_schemas', partitionIndex=0, controllerEpoch=5, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], addingReplicas=[], removingReplicas=[], isNew=false) to broker 1 for partition _schemas-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,318] TRACE [Controller id=1 epoch=27] Sending become-leader LeaderAndIsr request LeaderAndIsrPartitionState(topicName='__confluent.support.metrics', partitionIndex=0, controllerEpoch=1, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], addingReplicas=[], removingReplicas=[], isNew=false) to broker 1 for partition __confluent.support.metrics-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,320] TRACE [Controller id=1 epoch=27] Sending UpdateMetadata request UpdateMetadataPartitionState(topicName='quotes', partitionIndex=0, controllerEpoch=6, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) to brokers Set(1) for partition quotes-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,320] TRACE [Controller id=1 epoch=27] Sending UpdateMetadata request UpdateMetadataPartitionState(topicName='_schemas', partitionIndex=0, controllerEpoch=5, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) to brokers Set(1) for partition _schemas-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,320] TRACE [Controller id=1 epoch=27] Sending UpdateMetadata request UpdateMetadataPartitionState(topicName='__confluent.support.metrics', partitionIndex=0, controllerEpoch=1, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) to brokers Set(1) for partition __confluent.support.metrics-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,320] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[36mbroker              |[0m [2020-04-13 19:44:16,321] INFO [ReplicaStateMachine controllerId=1] Triggering offline replica state changes (kafka.controller.ZkReplicaStateMachine)
+[36mbroker              |[0m [2020-04-13 19:44:16,322] DEBUG [ReplicaStateMachine controllerId=1] Started replica state machine with initial state -> Map([Topic=__confluent.support.metrics,Partition=0,Replica=1] -> OnlineReplica, [Topic=_schemas,Partition=0,Replica=1] -> OnlineReplica, [Topic=quotes,Partition=0,Replica=1] -> OnlineReplica) (kafka.controller.ZkReplicaStateMachine)
+[36mbroker              |[0m [2020-04-13 19:44:16,323] INFO [PartitionStateMachine controllerId=1] Initializing partition state (kafka.controller.ZkPartitionStateMachine)
+[36mbroker              |[0m [2020-04-13 19:44:16,327] INFO [PartitionStateMachine controllerId=1] Triggering online partition state changes (kafka.controller.ZkPartitionStateMachine)
+[36mbroker              |[0m [2020-04-13 19:44:16,330] DEBUG [PartitionStateMachine controllerId=1] Started partition state machine with initial state -> Map(quotes-0 -> OnlinePartition, _schemas-0 -> OnlinePartition, __confluent.support.metrics-0 -> OnlinePartition) (kafka.controller.ZkPartitionStateMachine)
+[36mbroker              |[0m [2020-04-13 19:44:16,331] INFO [Controller id=1] Ready to serve as the new controller with epoch 27 (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,334] INFO [Controller id=1] Partitions undergoing preferred replica election:  (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,335] INFO [Controller id=1] Partitions that completed preferred replica election:  (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,335] INFO [Controller id=1] Skipping preferred replica election for partitions due to topic deletion:  (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,336] INFO [Controller id=1] Resuming preferred replica election for partitions:  (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,337] INFO [Controller id=1] Starting replica leader election (PREFERRED) for partitions  triggered by ZkTriggered (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,347] INFO [Controller id=1] Starting the controller scheduler (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:16,367] INFO [SocketServer brokerId=1] Started data-plane processors for 1 acceptors (kafka.network.SocketServer)
+[36mbroker              |[0m [2020-04-13 19:44:16,371] INFO Kafka version: 5.4.1-ccs (org.apache.kafka.common.utils.AppInfoParser)
+[36mbroker              |[0m [2020-04-13 19:44:16,371] INFO Kafka commitId: fd1e543386b47352 (org.apache.kafka.common.utils.AppInfoParser)
+[36mbroker              |[0m [2020-04-13 19:44:16,379] INFO Kafka startTimeMs: 1586807056369 (org.apache.kafka.common.utils.AppInfoParser)
+[36mbroker              |[0m [2020-04-13 19:44:16,380] INFO [KafkaServer id=1] started (kafka.server.KafkaServer)
+[36mbroker              |[0m [2020-04-13 19:44:16,395] INFO Waiting until monitored service is ready for metrics collection (io.confluent.support.metrics.BaseMetricsReporter)
+[36mbroker              |[0m [2020-04-13 19:44:16,396] INFO Monitored service is now ready (io.confluent.support.metrics.BaseMetricsReporter)
+[36mbroker              |[0m [2020-04-13 19:44:16,396] INFO Attempting to collect and submit metrics (io.confluent.support.metrics.BaseMetricsReporter)
+[36mbroker              |[0m [2020-04-13 19:44:16,404] INFO [RequestSendThread controllerId=1] Controller 1 connected to broker:9092 (id: 1 rack: null) for sending state change requests (kafka.controller.RequestSendThread)
+[36mbroker              |[0m [2020-04-13 19:44:16,515] TRACE [Controller id=1 epoch=27] Received response {error_code=0,_tagged_fields={}} for request UPDATE_METADATA with correlation id 0 sent to broker broker:9092 (id: 1 rack: null) (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,530] TRACE [Broker id=1] Received LeaderAndIsr request LeaderAndIsrPartitionState(topicName='_schemas', partitionIndex=0, controllerEpoch=5, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], addingReplicas=[], removingReplicas=[], isNew=false) correlation id 1 from controller 1 epoch 27 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,530] TRACE [Broker id=1] Received LeaderAndIsr request LeaderAndIsrPartitionState(topicName='__confluent.support.metrics', partitionIndex=0, controllerEpoch=1, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], addingReplicas=[], removingReplicas=[], isNew=false) correlation id 1 from controller 1 epoch 27 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,530] TRACE [Broker id=1] Received LeaderAndIsr request LeaderAndIsrPartitionState(topicName='quotes', partitionIndex=0, controllerEpoch=6, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], addingReplicas=[], removingReplicas=[], isNew=false) correlation id 1 from controller 1 epoch 27 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,549] TRACE [Broker id=1] Handling LeaderAndIsr request correlationId 1 from controller 1 epoch 27 starting the become-leader transition for partition quotes-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,549] TRACE [Broker id=1] Handling LeaderAndIsr request correlationId 1 from controller 1 epoch 27 starting the become-leader transition for partition _schemas-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,549] TRACE [Broker id=1] Handling LeaderAndIsr request correlationId 1 from controller 1 epoch 27 starting the become-leader transition for partition __confluent.support.metrics-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,553] INFO [ReplicaFetcherManager on broker 1] Removed fetcher for partitions Set(quotes-0, _schemas-0, __confluent.support.metrics-0) (kafka.server.ReplicaFetcherManager)
+[36mbroker              |[0m [2020-04-13 19:44:16,559] WARN The replication factor of topic __confluent.support.metrics is 1, which is less than the desired replication factor of 3.  If you happen to add more brokers to this cluster, then it is important to increase the replication factor of the topic to eventually 3 to ensure reliable and durable metrics collection. (io.confluent.support.metrics.common.kafka.KafkaUtilities)
+[36mbroker              |[0m [2020-04-13 19:44:16,569] INFO ProducerConfig values: 
+[36mbroker              |[0m 	acks = 1
+[36mbroker              |[0m 	batch.size = 16384
+[36mbroker              |[0m 	bootstrap.servers = []
+[36mbroker              |[0m 	buffer.memory = 33554432
+[36mbroker              |[0m 	client.dns.lookup = default
+[36mbroker              |[0m 	client.id = 
+[36mbroker              |[0m 	compression.type = none
+[36mbroker              |[0m 	connections.max.idle.ms = 540000
+[36mbroker              |[0m 	delivery.timeout.ms = 120000
+[36mbroker              |[0m 	enable.idempotence = false
+[36mbroker              |[0m 	interceptor.classes = []
+[36mbroker              |[0m 	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+[36mbroker              |[0m 	linger.ms = 0
+[36mbroker              |[0m 	max.block.ms = 10000
+[36mbroker              |[0m 	max.in.flight.requests.per.connection = 5
+[36mbroker              |[0m 	max.request.size = 1048576
+[36mbroker              |[0m 	metadata.max.age.ms = 300000
+[36mbroker              |[0m 	metric.reporters = []
+[36mbroker              |[0m 	metrics.num.samples = 2
+[36mbroker              |[0m 	metrics.recording.level = INFO
+[36mbroker              |[0m 	metrics.sample.window.ms = 30000
+[36mbroker              |[0m 	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+[36mbroker              |[0m 	receive.buffer.bytes = 32768
+[36mbroker              |[0m 	reconnect.backoff.max.ms = 1000
+[36mbroker              |[0m 	reconnect.backoff.ms = 50
+[36mbroker              |[0m 	request.timeout.ms = 30000
+[36mbroker              |[0m 	retries = 2147483647
+[36mbroker              |[0m 	retry.backoff.ms = 100
+[36mbroker              |[0m 	sasl.client.callback.handler.class = null
+[36mbroker              |[0m 	sasl.jaas.config = null
+[36mbroker              |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[36mbroker              |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[36mbroker              |[0m 	sasl.kerberos.service.name = null
+[36mbroker              |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[36mbroker              |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[36mbroker              |[0m 	sasl.login.callback.handler.class = null
+[36mbroker              |[0m 	sasl.login.class = null
+[36mbroker              |[0m 	sasl.login.refresh.buffer.seconds = 300
+[36mbroker              |[0m 	sasl.login.refresh.min.period.seconds = 60
+[36mbroker              |[0m 	sasl.login.refresh.window.factor = 0.8
+[36mbroker              |[0m 	sasl.login.refresh.window.jitter = 0.05
+[36mbroker              |[0m 	sasl.mechanism = GSSAPI
+[36mbroker              |[0m 	security.protocol = PLAINTEXT
+[36mbroker              |[0m 	security.providers = null
+[36mbroker              |[0m 	send.buffer.bytes = 131072
+[36mbroker              |[0m 	ssl.cipher.suites = null
+[36mbroker              |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[36mbroker              |[0m 	ssl.endpoint.identification.algorithm = https
+[36mbroker              |[0m 	ssl.key.password = null
+[36mbroker              |[0m 	ssl.keymanager.algorithm = SunX509
+[36mbroker              |[0m 	ssl.keystore.location = null
+[36mbroker              |[0m 	ssl.keystore.password = null
+[36mbroker              |[0m 	ssl.keystore.type = JKS
+[36mbroker              |[0m 	ssl.protocol = TLS
+[36mbroker              |[0m 	ssl.provider = null
+[36mbroker              |[0m 	ssl.secure.random.implementation = null
+[36mbroker              |[0m 	ssl.trustmanager.algorithm = PKIX
+[36mbroker              |[0m 	ssl.truststore.location = null
+[36mbroker              |[0m 	ssl.truststore.password = null
+[36mbroker              |[0m 	ssl.truststore.type = JKS
+[36mbroker              |[0m 	transaction.timeout.ms = 60000
+[36mbroker              |[0m 	transactional.id = null
+[36mbroker              |[0m 	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+[36mbroker              |[0m  (org.apache.kafka.clients.producer.ProducerConfig)
+[36mbroker              |[0m [2020-04-13 19:44:16,579] INFO [Partition quotes-0 broker=1] Log loaded for partition quotes-0 with initial high watermark 0 (kafka.cluster.Partition)
+[36mbroker              |[0m [2020-04-13 19:44:16,579] INFO [Partition quotes-0 broker=1] quotes-0 starts at leader epoch 0 from offset 0 with high watermark 0. Previous leader epoch was -1. (kafka.cluster.Partition)
+[36mbroker              |[0m [2020-04-13 19:44:16,585] INFO [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 0 ms. (org.apache.kafka.clients.producer.KafkaProducer)
+[36mbroker              |[0m [2020-04-13 19:44:16,585] ERROR Could not submit metrics to Kafka topic __confluent.support.metrics: Failed to construct kafka producer (io.confluent.support.metrics.BaseMetricsReporter)
+[36mbroker              |[0m [2020-04-13 19:44:16,610] TRACE [Broker id=1] Stopped fetchers as part of become-leader request from controller 1 epoch 27 with correlation id 1 for partition quotes-0 (last update controller epoch 6) (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,612] INFO [Partition _schemas-0 broker=1] Log loaded for partition _schemas-0 with initial high watermark 30 (kafka.cluster.Partition)
+[36mbroker              |[0m [2020-04-13 19:44:16,612] INFO [Partition _schemas-0 broker=1] _schemas-0 starts at leader epoch 0 from offset 30 with high watermark 30. Previous leader epoch was -1. (kafka.cluster.Partition)
+[36mbroker              |[0m [2020-04-13 19:44:16,612] TRACE [Broker id=1] Stopped fetchers as part of become-leader request from controller 1 epoch 27 with correlation id 1 for partition _schemas-0 (last update controller epoch 5) (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,614] INFO [Partition __confluent.support.metrics-0 broker=1] Log loaded for partition __confluent.support.metrics-0 with initial high watermark 0 (kafka.cluster.Partition)
+[36mbroker              |[0m [2020-04-13 19:44:16,614] INFO [Partition __confluent.support.metrics-0 broker=1] __confluent.support.metrics-0 starts at leader epoch 0 from offset 0 with high watermark 0. Previous leader epoch was -1. (kafka.cluster.Partition)
+[36mbroker              |[0m [2020-04-13 19:44:16,615] TRACE [Broker id=1] Stopped fetchers as part of become-leader request from controller 1 epoch 27 with correlation id 1 for partition __confluent.support.metrics-0 (last update controller epoch 1) (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,616] TRACE [Broker id=1] Completed LeaderAndIsr request correlationId 1 from controller 1 epoch 27 for the become-leader transition for partition quotes-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,616] TRACE [Broker id=1] Completed LeaderAndIsr request correlationId 1 from controller 1 epoch 27 for the become-leader transition for partition _schemas-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,617] TRACE [Broker id=1] Completed LeaderAndIsr request correlationId 1 from controller 1 epoch 27 for the become-leader transition for partition __confluent.support.metrics-0 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,623] TRACE [Controller id=1 epoch=27] Received response {error_code=0,partition_errors=[{topic_name=quotes,partition_index=0,error_code=0,_tagged_fields={}},{topic_name=_schemas,partition_index=0,error_code=0,_tagged_fields={}},{topic_name=__confluent.support.metrics,partition_index=0,error_code=0,_tagged_fields={}}],_tagged_fields={}} for request LEADER_AND_ISR with correlation id 1 sent to broker broker:9092 (id: 1 rack: null) (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,629] TRACE [Broker id=1] Cached leader info UpdateMetadataPartitionState(topicName='_schemas', partitionIndex=0, controllerEpoch=5, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) for partition _schemas-0 in response to UpdateMetadata request sent by controller 1 epoch 27 with correlation id 2 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,629] TRACE [Broker id=1] Cached leader info UpdateMetadataPartitionState(topicName='__confluent.support.metrics', partitionIndex=0, controllerEpoch=1, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) for partition __confluent.support.metrics-0 in response to UpdateMetadata request sent by controller 1 epoch 27 with correlation id 2 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,629] TRACE [Broker id=1] Cached leader info UpdateMetadataPartitionState(topicName='quotes', partitionIndex=0, controllerEpoch=6, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) for partition quotes-0 in response to UpdateMetadata request sent by controller 1 epoch 27 with correlation id 2 (state.change.logger)
+[36mbroker              |[0m [2020-04-13 19:44:16,631] TRACE [Controller id=1 epoch=27] Received response {error_code=0,_tagged_fields={}} for request UPDATE_METADATA with correlation id 2 sent to broker broker:9092 (id: 1 rack: null) (state.change.logger)
+[32mschema-registry     |[0m ===> Launching ... 
+[32mschema-registry     |[0m ===> Launching schema-registry ... 
+[32mschema-registry     |[0m [2020-04-13 19:44:17,283] INFO SchemaRegistryConfig values: 
+[32mschema-registry     |[0m 	access.control.allow.headers = 
+[32mschema-registry     |[0m 	access.control.allow.methods = 
+[32mschema-registry     |[0m 	access.control.allow.origin = 
+[32mschema-registry     |[0m 	authentication.method = NONE
+[32mschema-registry     |[0m 	authentication.realm = 
+[32mschema-registry     |[0m 	authentication.roles = [*]
+[32mschema-registry     |[0m 	authentication.skip.paths = []
+[32mschema-registry     |[0m 	avro.compatibility.level = backward
+[32mschema-registry     |[0m 	compression.enable = true
+[32mschema-registry     |[0m 	debug = false
+[32mschema-registry     |[0m 	host.name = schema-registry
+[32mschema-registry     |[0m 	idle.timeout.ms = 30000
+[32mschema-registry     |[0m 	inter.instance.headers.whitelist = []
+[32mschema-registry     |[0m 	inter.instance.protocol = http
+[32mschema-registry     |[0m 	kafkastore.bootstrap.servers = [SSL://broker:9092]
+[32mschema-registry     |[0m 	kafkastore.connection.url = zookeeper:2181
+[32mschema-registry     |[0m 	kafkastore.group.id = 
+[32mschema-registry     |[0m 	kafkastore.init.timeout.ms = 60000
+[32mschema-registry     |[0m 	kafkastore.sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[32mschema-registry     |[0m 	kafkastore.sasl.kerberos.min.time.before.relogin = 60000
+[32mschema-registry     |[0m 	kafkastore.sasl.kerberos.service.name = 
+[32mschema-registry     |[0m 	kafkastore.sasl.kerberos.ticket.renew.jitter = 0.05
+[32mschema-registry     |[0m 	kafkastore.sasl.kerberos.ticket.renew.window.factor = 0.8
+[32mschema-registry     |[0m 	kafkastore.sasl.mechanism = GSSAPI
+[32mschema-registry     |[0m 	kafkastore.security.protocol = SSL
+[32mschema-registry     |[0m 	kafkastore.ssl.cipher.suites = 
+[32mschema-registry     |[0m 	kafkastore.ssl.enabled.protocols = TLSv1.2,TLSv1.1,TLSv1
+[32mschema-registry     |[0m 	kafkastore.ssl.endpoint.identification.algorithm = 
+[32mschema-registry     |[0m 	kafkastore.ssl.key.password = [hidden]
+[32mschema-registry     |[0m 	kafkastore.ssl.keymanager.algorithm = SunX509
+[32mschema-registry     |[0m 	kafkastore.ssl.keystore.location = /etc/schema-registry/secrets/schema-registry.keystore.jks
+[32mschema-registry     |[0m 	kafkastore.ssl.keystore.password = [hidden]
+[32mschema-registry     |[0m 	kafkastore.ssl.keystore.type = JKS
+[32mschema-registry     |[0m 	kafkastore.ssl.protocol = TLS
+[32mschema-registry     |[0m 	kafkastore.ssl.provider = 
+[32mschema-registry     |[0m 	kafkastore.ssl.trustmanager.algorithm = PKIX
+[32mschema-registry     |[0m 	kafkastore.ssl.truststore.location = /etc/schema-registry/secrets/schema-registry.truststore.jks
+[32mschema-registry     |[0m 	kafkastore.ssl.truststore.password = [hidden]
+[32mschema-registry     |[0m 	kafkastore.ssl.truststore.type = JKS
+[32mschema-registry     |[0m 	kafkastore.timeout.ms = 500
+[32mschema-registry     |[0m 	kafkastore.topic = _schemas
+[32mschema-registry     |[0m 	kafkastore.topic.replication.factor = 3
+[32mschema-registry     |[0m 	kafkastore.write.max.retries = 5
+[32mschema-registry     |[0m 	kafkastore.zk.session.timeout.ms = 30000
+[32mschema-registry     |[0m 	listeners = [https://0.0.0.0:8181]
+[32mschema-registry     |[0m 	master.eligibility = true
+[32mschema-registry     |[0m 	metric.reporters = []
+[32mschema-registry     |[0m 	metrics.jmx.prefix = kafka.schema.registry
+[32mschema-registry     |[0m 	metrics.num.samples = 2
+[32mschema-registry     |[0m 	metrics.sample.window.ms = 30000
+[32mschema-registry     |[0m 	metrics.tag.map = []
+[32mschema-registry     |[0m 	mode.mutability = false
+[32mschema-registry     |[0m 	port = 8081
+[32mschema-registry     |[0m 	request.logger.name = io.confluent.rest-utils.requests
+[32mschema-registry     |[0m 	resource.extension.class = []
+[32mschema-registry     |[0m 	resource.extension.classes = []
+[32mschema-registry     |[0m 	resource.static.locations = []
+[32mschema-registry     |[0m 	response.mediatype.default = application/vnd.schemaregistry.v1+json
+[32mschema-registry     |[0m 	response.mediatype.preferred = [application/vnd.schemaregistry.v1+json, application/vnd.schemaregistry+json, application/json]
+[32mschema-registry     |[0m 	rest.servlet.initializor.classes = []
+[32mschema-registry     |[0m 	schema.registry.group.id = schema-registry
+[32mschema-registry     |[0m 	schema.registry.inter.instance.protocol = https
+[32mschema-registry     |[0m 	schema.registry.resource.extension.class = []
+[32mschema-registry     |[0m 	schema.registry.zk.namespace = schema_registry
+[32mschema-registry     |[0m 	shutdown.graceful.ms = 1000
+[32mschema-registry     |[0m 	ssl.cipher.suites = []
+[32mschema-registry     |[0m 	ssl.client.auth = true
+[32mschema-registry     |[0m 	ssl.client.authentication = NONE
+[32mschema-registry     |[0m 	ssl.enabled.protocols = []
+[32mschema-registry     |[0m 	ssl.endpoint.identification.algorithm = null
+[32mschema-registry     |[0m 	ssl.key.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keymanager.algorithm = 
+[32mschema-registry     |[0m 	ssl.keystore.location = /etc/schema-registry/secrets/schema-registry.keystore.jks
+[32mschema-registry     |[0m 	ssl.keystore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keystore.type = JKS
+[32mschema-registry     |[0m 	ssl.protocol = TLS
+[32mschema-registry     |[0m 	ssl.provider = 
+[32mschema-registry     |[0m 	ssl.trustmanager.algorithm = 
+[32mschema-registry     |[0m 	ssl.truststore.location = /etc/schema-registry/secrets/schema-registry.truststore.jks
+[32mschema-registry     |[0m 	ssl.truststore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.truststore.type = JKS
+[32mschema-registry     |[0m 	websocket.path.prefix = /ws
+[32mschema-registry     |[0m 	websocket.servlet.initializor.classes = []
+[32mschema-registry     |[0m 	zookeeper.set.acl = false
+[32mschema-registry     |[0m  (io.confluent.kafka.schemaregistry.rest.SchemaRegistryConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,309] INFO Logging initialized @335ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,367] WARN The configuration ssl.client.auth is deprecated and should be replaced with ssl.client.authentication (io.confluent.rest.ApplicationServer)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,389] INFO Adding listener: https://0.0.0.0:8181 (io.confluent.rest.ApplicationServer)
+[36mbroker              |[0m [2020-04-13 19:44:17,496] INFO Successfully submitted metrics to Confluent via secure endpoint (io.confluent.support.metrics.submitters.ConfluentSubmitter)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,740] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,745] INFO Client environment:zookeeper.version=3.5.6-c11b7e26bc554b8523dc929761dd28808913f091, built on 10/08/2019 20:18 GMT (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,745] INFO Client environment:host.name=schema-registry (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,745] INFO Client environment:java.version=1.8.0_212 (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,745] INFO Client environment:java.vendor=Azul Systems, Inc. (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,745] INFO Client environment:java.home=/usr/lib/jvm/zulu-8-amd64/jre (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,745] INFO Client environment:java.class.path=:/usr/bin/../package-schema-registry/target/kafka-schema-registry-package-*-development/share/java/schema-registry/*:/usr/bin/../share/java/confluent-security/schema-registry/aws-java-sdk-s3-1.11.475.jar:/usr/bin/../share/java/confluent-security/schema-registry/threetenbp-1.3.3.jar:/usr/bin/../share/java/confluent-security/schema-registry/ion-java-1.0.2.jar:/usr/bin/../share/java/confluent-security/schema-registry/confluent-schema-registry-security-plugin-5.4.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/gson-2.8.5.jar:/usr/bin/../share/java/confluent-security/schema-registry/kafka-client-plugins-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/jackson-module-paranamer-2.9.10.jar:/usr/bin/../share/java/confluent-security/schema-registry/grpc-context-1.19.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/commons-codec-1.9.jar:/usr/bin/../share/java/confluent-security/schema-registry/confluent-licensing-new-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-cloud-core-1.82.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/netty-tcnative-boringssl-static-2.0.26.Final.jar:/usr/bin/../share/java/confluent-security/schema-registry/jackson-dataformat-cbor-2.9.10.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-http-client-jackson2-1.30.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/httpcore-4.4.6.jar:/usr/bin/../share/java/confluent-security/schema-registry/netty-all-4.1.42.Final.jar:/usr/bin/../share/java/confluent-security/schema-registry/scala-java8-compat_2.12-0.9.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-auth-library-oauth2-http-0.16.2.jar:/usr/bin/../share/java/confluent-security/schema-registry/maven-artifact-3.6.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/api-common-1.8.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/jackson-databind-2.9.10.3.jar:/usr/bin/../share/java/confluent-security/schema-registry/opencensus-api-0.21.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/connect-json-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/jsr305-3.0.2.jar:/usr/bin/../share/java/confluent-security/schema-registry/jackson-dataformat-csv-2.9.10.jar:/usr/bin/../share/java/confluent-security/schema-registry/connect-runtime-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-http-client-appengine-1.30.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/flatbuffers-java-1.9.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/jopt-simple-5.0.4.jar:/usr/bin/../share/java/confluent-security/schema-registry/reflections-0.9.11.jar:/usr/bin/../share/java/confluent-security/schema-registry/kafka_2.12-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-api-client-1.30.2.jar:/usr/bin/../share/java/confluent-security/schema-registry/kafka-tools-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/j2objc-annotations-1.3.jar:/usr/bin/../share/java/confluent-security/schema-registry/aws-java-sdk-kms-1.11.475.jar:/usr/bin/../share/java/confluent-security/schema-registry/paranamer-2.8.jar:/usr/bin/../share/java/confluent-security/schema-registry/scala-logging_2.12-3.9.2.jar:/usr/bin/../share/java/confluent-security/schema-registry/proto-google-iam-v1-0.12.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/rest-authorizer-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/error_prone_annotations-2.3.2.jar:/usr/bin/../share/java/confluent-security/schema-registry/jackson-module-scala_2.12-2.9.10.jar:/usr/bin/../share/java/confluent-security/schema-registry/metrics-core-2.2.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/confluent-serializers-new-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/jackson-datatype-jdk8-2.9.10.jar:/usr/bin/../share/java/confluent-security/schema-registry/scala-collection-compat_2.12-2.1.2.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-auth-library-credentials-0.16.2.jar:/usr/bin/../share/java/confluent-security/schema-registry/scala-reflect-2.12.10.jar:/usr/bin/../share/java/confluent-security/schema-registry/argparse4j-0.7.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/plexus-utils-3.2.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/proto-google-common-protos-1.16.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/kafka-log4j-appender-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/confluent-security-plugins-common-5.4.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/jose4j-0.6.4.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-cloud-storage-1.82.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/bcpkix-jdk15on-1.60.jar:/usr/bin/../share/java/confluent-security/schema-registry/commons-logging-1.1.3.jar:/usr/bin/../share/java/confluent-security/schema-registry/connect-api-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/opencensus-contrib-http-util-0.21.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/jmespath-java-1.11.475.jar:/usr/bin/../share/java/confluent-security/schema-registry/gax-1.47.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-http-client-1.30.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/protobuf-java-3.8.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-cloud-core-http-1.82.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/bcprov-jdk15on-1.60.jar:/usr/bin/../share/java/confluent-security/schema-registry/snappy-java-1.1.7.3.jar:/usr/bin/../share/java/confluent-security/schema-registry/httpclient-4.5.3.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-oauth-client-1.30.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/jetty-client-9.4.20.v20190813.jar:/usr/bin/../share/java/confluent-security/schema-registry/aws-java-sdk-core-1.11.475.jar:/usr/bin/../share/java/confluent-security/schema-registry/google-api-services-storage-v1-rev20190624-1.30.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/common-utils-5.4.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/zstd-jni-1.4.3-1.jar:/usr/bin/../share/java/confluent-security/schema-registry/lz4-java-1.6.0.jar:/usr/bin/../share/java/confluent-security/schema-registry/authorizer-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/scala-library-2.12.10.jar:/usr/bin/../share/java/confluent-security/schema-registry/kafka-clients-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/javax.ws.rs-api-2.1.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/commons-cli-1.4.jar:/usr/bin/../share/java/confluent-security/schema-registry/gax-httpjson-0.64.1.jar:/usr/bin/../share/java/confluent-security/schema-registry/connect-transforms-5.4.1-ce.jar:/usr/bin/../share/java/confluent-security/schema-registry/protobuf-java-util-3.8.0.jar:/usr/bin/../share/java/confluent-common/build-tools-5.4.1.jar:/usr/bin/../share/java/confluent-common/common-metrics-5.4.1.jar:/usr/bin/../share/java/confluent-common/slf4j-api-1.7.26.jar:/usr/bin/../share/java/confluent-common/common-utils-5.4.1.jar:/usr/bin/../share/java/confluent-common/common-config-5.4.1.jar:/usr/bin/../share/java/rest-utils/jboss-logging-3.3.2.Final.jar:/usr/bin/../share/java/rest-utils/jetty-xml-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jakarta.annotation-api-1.3.4.jar:/usr/bin/../share/java/rest-utils/jersey-container-servlet-2.28.jar:/usr/bin/../share/java/rest-utils/rest-utils-5.4.1.jar:/usr/bin/../share/java/rest-utils/jackson-annotations-2.9.10.jar:/usr/bin/../share/java/rest-utils/javax-websocket-server-impl-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/validation-api-2.0.1.Final.jar:/usr/bin/../share/java/rest-utils/jetty-plus-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/websocket-common-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/websocket-api-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jackson-databind-2.9.10.3.jar:/usr/bin/../share/java/rest-utils/javax.annotation-api-1.3.jar:/usr/bin/../share/java/rest-utils/hk2-api-2.5.0.jar:/usr/bin/../share/java/rest-utils/jersey-client-2.28.jar:/usr/bin/../share/java/rest-utils/javassist-3.22.0-CR2.jar:/usr/bin/../share/java/rest-utils/jetty-continuation-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/javax.websocket-client-api-1.0.jar:/usr/bin/../share/java/rest-utils/jaxb-api-2.3.0.jar:/usr/bin/../share/java/rest-utils/jetty-server-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/asm-7.1.jar:/usr/bin/../share/java/rest-utils/jackson-module-jaxb-annotations-2.9.10.jar:/usr/bin/../share/java/rest-utils/jetty-io-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jersey-server-2.28.jar:/usr/bin/../share/java/rest-utils/jersey-container-servlet-core-2.28.jar:/usr/bin/../share/java/rest-utils/jetty-servlets-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jetty-servlet-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jackson-jaxrs-json-provider-2.9.10.jar:/usr/bin/../share/java/rest-utils/jetty-util-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/hibernate-validator-6.0.11.Final.jar:/usr/bin/../share/java/rest-utils/jersey-media-jaxb-2.28.jar:/usr/bin/../share/java/rest-utils/hk2-locator-2.5.0.jar:/usr/bin/../share/java/rest-utils/classmate-1.3.4.jar:/usr/bin/../share/java/rest-utils/javax-websocket-client-impl-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jackson-jaxrs-base-2.9.10.jar:/usr/bin/../share/java/rest-utils/jetty-annotations-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jetty-jmx-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jakarta.inject-2.5.0.jar:/usr/bin/../share/java/rest-utils/websocket-server-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jersey-common-2.28.jar:/usr/bin/../share/java/rest-utils/jersey-hk2-2.28.jar:/usr/bin/../share/java/rest-utils/osgi-resource-locator-1.0.1.jar:/usr/bin/../share/java/rest-utils/jackson-core-2.9.10.jar:/usr/bin/../share/java/rest-utils/javax.servlet-api-3.1.0.jar:/usr/bin/../share/java/rest-utils/websocket-servlet-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jetty-jaas-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/kafka-clients-5.4.1-ccs.jar:/usr/bin/../share/java/rest-utils/hk2-utils-2.5.0.jar:/usr/bin/../share/java/rest-utils/snappy-java-1.1.7.3.jar:/usr/bin/../share/java/rest-utils/javax.websocket-api-1.0.jar:/usr/bin/../share/java/rest-utils/asm-commons-7.1.jar:/usr/bin/../share/java/rest-utils/websocket-client-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jetty-client-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/asm-analysis-7.1.jar:/usr/bin/../share/java/rest-utils/jetty-security-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/jakarta.el-api-3.0.2.jar:/usr/bin/../share/java/rest-utils/jakarta.ws.rs-api-2.1.5.jar:/usr/bin/../share/java/rest-utils/jetty-webapp-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/aopalliance-repackaged-2.5.0.jar:/usr/bin/../share/java/rest-utils/zstd-jni-1.4.3-1.jar:/usr/bin/../share/java/rest-utils/jersey-bean-validation-2.28.jar:/usr/bin/../share/java/rest-utils/lz4-java-1.6.0.jar:/usr/bin/../share/java/rest-utils/jetty-jndi-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/activation-1.1.1.jar:/usr/bin/../share/java/rest-utils/jakarta.el-3.0.2.jar:/usr/bin/../share/java/rest-utils/jetty-http-9.4.20.v20190813.jar:/usr/bin/../share/java/rest-utils/asm-tree-7.1.jar:/usr/bin/../share/java/schema-registry/commons-compress-1.19.jar:/usr/bin/../share/java/schema-registry/jboss-logging-3.3.2.Final.jar:/usr/bin/../share/java/schema-registry/jakarta.annotation-api-1.3.4.jar:/usr/bin/../share/java/schema-registry/jackson-module-paranamer-2.9.10.jar:/usr/bin/../share/java/schema-registry/jackson-annotations-2.9.10.jar:/usr/bin/../share/java/schema-registry/swagger-models-1.5.3.jar:/usr/bin/../share/java/schema-registry/netty-transport-native-epoll-4.1.42.Final.jar:/usr/bin/../share/java/schema-registry/validation-api-2.0.1.Final.jar:/usr/bin/../share/java/schema-registry/scala-java8-compat_2.12-0.9.0.jar:/usr/bin/../share/java/schema-registry/log4j-1.2.17.jar:/usr/bin/../share/java/schema-registry/joda-time-2.7.jar:/usr/bin/../share/java/schema-registry/jackson-databind-2.9.10.3.jar:/usr/bin/../share/java/schema-registry/jackson-dataformat-csv-2.9.10.jar:/usr/bin/../share/java/schema-registry/jackson-datatype-joda-2.9.10.jar:/usr/bin/../share/java/schema-registry/netty-codec-4.1.42.Final.jar:/usr/bin/../share/java/schema-registry/zookeeper-jute-3.5.6.jar:/usr/bin/../share/java/schema-registry/jopt-simple-5.0.4.jar:/usr/bin/../share/java/schema-registry/jersey-client-2.28.jar:/usr/bin/../share/java/schema-registry/paranamer-2.8.jar:/usr/bin/../share/java/schema-registry/netty-transport-native-unix-common-4.1.42.Final.jar:/usr/bin/../share/java/schema-registry/zookeeper-3.5.6.jar:/usr/bin/../share/java/schema-registry/scala-logging_2.12-3.9.2.jar:/usr/bin/../share/java/schema-registry/jackson-module-scala_2.12-2.9.10.jar:/usr/bin/../share/java/schema-registry/metrics-core-2.2.0.jar:/usr/bin/../share/java/schema-registry/jackson-datatype-jdk8-2.9.10.jar:/usr/bin/../share/java/schema-registry/kafka_2.12-5.4.1-ccs.jar:/usr/bin/../share/java/schema-registry/jersey-server-2.28.jar:/usr/bin/../share/java/schema-registry/swagger-core-1.5.3.jar:/usr/bin/../share/java/schema-registry/scala-collection-compat_2.12-2.1.2.jar:/usr/bin/../share/java/schema-registry/zkclient-0.11.jar:/usr/bin/../share/java/schema-registry/guava-18.0.jar:/usr/bin/../share/java/schema-registry/scala-reflect-2.12.10.jar:/usr/bin/../share/java/schema-registry/hibernate-validator-6.0.11.Final.jar:/usr/bin/../share/java/schema-registry/swagger-annotations-1.5.22.jar:/usr/bin/../share/java/schema-registry/jersey-media-jaxb-2.28.jar:/usr/bin/../share/java/schema-registry/classmate-1.3.4.jar:/usr/bin/../share/java/schema-registry/snakeyaml-1.23.jar:/usr/bin/../share/java/schema-registry/avro-1.9.1.jar:/usr/bin/../share/java/schema-registry/jakarta.inject-2.5.0.jar:/usr/bin/../share/java/schema-registry/slf4j-api-1.7.26.jar:/usr/bin/../share/java/schema-registry/jersey-common-2.28.jar:/usr/bin/../share/java/schema-registry/osgi-resource-locator-1.0.1.jar:/usr/bin/../share/java/schema-registry/netty-buffer-4.1.42.Final.jar:/usr/bin/../share/java/schema-registry/jackson-core-2.9.10.jar:/usr/bin/../share/java/schema-registry/netty-resolver-4.1.42.Final.jar:/usr/bin/../share/java/schema-registry/kafka-schema-registry-client-5.4.1.jar:/usr/bin/../share/java/schema-registry/kafka-schema-registry-5.4.1.jar:/usr/bin/../share/java/schema-registry/netty-handler-4.1.42.Final.jar:/usr/bin/../share/java/schema-registry/kafka-clients-5.4.1-ccs.jar:/usr/bin/../share/java/schema-registry/audience-annotations-0.5.0.jar:/usr/bin/../share/java/schema-registry/snappy-java-1.1.7.3.jar:/usr/bin/../share/java/schema-registry/jakarta.el-api-3.0.2.jar:/usr/bin/../share/java/schema-registry/jakarta.ws.rs-api-2.1.5.jar:/usr/bin/../share/java/schema-registry/zstd-jni-1.4.3-1.jar:/usr/bin/../share/java/schema-registry/jersey-bean-validation-2.28.jar:/usr/bin/../share/java/schema-registry/lz4-java-1.6.0.jar:/usr/bin/../share/java/schema-registry/commons-lang3-3.2.1.jar:/usr/bin/../share/java/schema-registry/netty-common-4.1.42.Final.jar:/usr/bin/../share/java/schema-registry/netty-transport-4.1.42.Final.jar:/usr/bin/../share/java/schema-registry/scala-library-2.12.10.jar:/usr/bin/../share/java/schema-registry/commons-cli-1.4.jar:/usr/bin/../share/java/schema-registry/jackson-dataformat-yaml-2.9.10.jar:/usr/bin/../share/java/schema-registry/jakarta.el-3.0.2.jar:/usr/bin/../share/java/schema-registry/slf4j-log4j12-1.7.26.jar (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,745] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,745] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,749] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,749] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,749] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,749] INFO Client environment:os.version=4.19.76-linuxkit (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,750] INFO Client environment:user.name=root (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,750] INFO Client environment:user.home=/root (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,750] INFO Client environment:user.dir=/ (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,750] INFO Client environment:os.memory.free=87MB (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,750] INFO Client environment:os.memory.max=512MB (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,750] INFO Client environment:os.memory.total=126MB (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,752] INFO Initiating client connection, connectString=zookeeper:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@6497b078 (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,756] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,759] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,764] INFO zookeeper.request.timeout value is 0. feature enabled= (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,765] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,771] INFO Opening socket connection to server zookeeper/172.18.0.2:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,775] INFO Socket connection established, initiating session, client: /172.18.0.4:46666, server: zookeeper/172.18.0.2:2181 (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,780] INFO Session establishment complete on server zookeeper/172.18.0.2:2181, sessionid = 0x1000145a2b30003, negotiated timeout = 30000 (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,782] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,787] INFO Created schema registry namespace zookeeper:2181 /schema_registry (io.confluent.kafka.schemaregistry.rest.SchemaRegistryConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,787] INFO Terminate ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,894] INFO Session: 0x1000145a2b30003 closed (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,894] INFO EventThread shut down for session: 0x1000145a2b30003 (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,895] INFO Initiating client connection, connectString=zookeeper:2181/schema_registry sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3e6ef8ad (org.apache.zookeeper.ZooKeeper)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,896] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,896] INFO zookeeper.request.timeout value is 0. feature enabled= (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,897] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,897] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,897] INFO Opening socket connection to server zookeeper/172.18.0.2:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,897] INFO Socket connection established, initiating session, client: /172.18.0.4:46668, server: zookeeper/172.18.0.2:2181 (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,899] INFO Session establishment complete on server zookeeper/172.18.0.2:2181, sessionid = 0x1000145a2b30004, negotiated timeout = 30000 (org.apache.zookeeper.ClientCnxn)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,900] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,903] INFO Initializing KafkaStore with broker endpoints: SSL://broker:9092 (io.confluent.kafka.schemaregistry.storage.KafkaStore)
+[32mschema-registry     |[0m [2020-04-13 19:44:17,907] INFO AdminClientConfig values: 
+[32mschema-registry     |[0m 	bootstrap.servers = [SSL://broker:9092]
+[32mschema-registry     |[0m 	client.dns.lookup = default
+[32mschema-registry     |[0m 	client.id = 
+[32mschema-registry     |[0m 	connections.max.idle.ms = 300000
+[32mschema-registry     |[0m 	metadata.max.age.ms = 300000
+[32mschema-registry     |[0m 	metric.reporters = []
+[32mschema-registry     |[0m 	metrics.num.samples = 2
+[32mschema-registry     |[0m 	metrics.recording.level = INFO
+[32mschema-registry     |[0m 	metrics.sample.window.ms = 30000
+[32mschema-registry     |[0m 	receive.buffer.bytes = 65536
+[32mschema-registry     |[0m 	reconnect.backoff.max.ms = 1000
+[32mschema-registry     |[0m 	reconnect.backoff.ms = 50
+[32mschema-registry     |[0m 	request.timeout.ms = 120000
+[32mschema-registry     |[0m 	retries = 5
+[32mschema-registry     |[0m 	retry.backoff.ms = 100
+[32mschema-registry     |[0m 	sasl.client.callback.handler.class = null
+[32mschema-registry     |[0m 	sasl.jaas.config = null
+[32mschema-registry     |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[32mschema-registry     |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[32mschema-registry     |[0m 	sasl.kerberos.service.name = null
+[32mschema-registry     |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[32mschema-registry     |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[32mschema-registry     |[0m 	sasl.login.callback.handler.class = null
+[32mschema-registry     |[0m 	sasl.login.class = null
+[32mschema-registry     |[0m 	sasl.login.refresh.buffer.seconds = 300
+[32mschema-registry     |[0m 	sasl.login.refresh.min.period.seconds = 60
+[32mschema-registry     |[0m 	sasl.login.refresh.window.factor = 0.8
+[32mschema-registry     |[0m 	sasl.login.refresh.window.jitter = 0.05
+[32mschema-registry     |[0m 	sasl.mechanism = GSSAPI
+[32mschema-registry     |[0m 	security.protocol = SSL
+[32mschema-registry     |[0m 	security.providers = null
+[32mschema-registry     |[0m 	send.buffer.bytes = 131072
+[32mschema-registry     |[0m 	ssl.cipher.suites = null
+[32mschema-registry     |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[32mschema-registry     |[0m 	ssl.endpoint.identification.algorithm = https
+[32mschema-registry     |[0m 	ssl.key.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keymanager.algorithm = SunX509
+[32mschema-registry     |[0m 	ssl.keystore.location = /etc/schema-registry/secrets/schema-registry.keystore.jks
+[32mschema-registry     |[0m 	ssl.keystore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keystore.type = JKS
+[32mschema-registry     |[0m 	ssl.protocol = TLS
+[32mschema-registry     |[0m 	ssl.provider = null
+[32mschema-registry     |[0m 	ssl.secure.random.implementation = null
+[32mschema-registry     |[0m 	ssl.trustmanager.algorithm = PKIX
+[32mschema-registry     |[0m 	ssl.truststore.location = /etc/schema-registry/secrets/schema-registry.truststore.jks
+[32mschema-registry     |[0m 	ssl.truststore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.truststore.type = JKS
+[32mschema-registry     |[0m  (org.apache.kafka.clients.admin.AdminClientConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,080] WARN The configuration 'ssl.truststore.location' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,080] WARN The configuration 'ssl.keystore.password' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,080] WARN The configuration 'ssl.key.password' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,080] WARN The configuration 'ssl.keystore.location' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,080] WARN The configuration 'topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,080] WARN The configuration 'connection.url' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,080] WARN The configuration 'ssl.truststore.password' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,081] INFO Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,081] INFO Kafka commitId: 43fe9a258cd144d6 (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,081] INFO Kafka startTimeMs: 1586807058080 (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,397] INFO Validating schemas topic _schemas (io.confluent.kafka.schemaregistry.storage.KafkaStore)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,407] WARN The replication factor of the schema topic _schemas is less than the desired one of 3. If this is a production environment, it's crucial to add more brokers and increase the replication factor of the topic. (io.confluent.kafka.schemaregistry.storage.KafkaStore)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,432] INFO ProducerConfig values: 
+[32mschema-registry     |[0m 	acks = -1
+[32mschema-registry     |[0m 	batch.size = 16384
+[32mschema-registry     |[0m 	bootstrap.servers = [SSL://broker:9092]
+[32mschema-registry     |[0m 	buffer.memory = 33554432
+[32mschema-registry     |[0m 	client.dns.lookup = default
+[32mschema-registry     |[0m 	client.id = 
+[32mschema-registry     |[0m 	compression.type = none
+[32mschema-registry     |[0m 	connections.max.idle.ms = 540000
+[32mschema-registry     |[0m 	delivery.timeout.ms = 120000
+[32mschema-registry     |[0m 	enable.idempotence = false
+[32mschema-registry     |[0m 	interceptor.classes = []
+[32mschema-registry     |[0m 	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+[32mschema-registry     |[0m 	linger.ms = 0
+[32mschema-registry     |[0m 	max.block.ms = 60000
+[32mschema-registry     |[0m 	max.in.flight.requests.per.connection = 5
+[32mschema-registry     |[0m 	max.request.size = 1048576
+[32mschema-registry     |[0m 	metadata.max.age.ms = 300000
+[32mschema-registry     |[0m 	metric.reporters = []
+[32mschema-registry     |[0m 	metrics.num.samples = 2
+[32mschema-registry     |[0m 	metrics.recording.level = INFO
+[32mschema-registry     |[0m 	metrics.sample.window.ms = 30000
+[32mschema-registry     |[0m 	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+[32mschema-registry     |[0m 	receive.buffer.bytes = 32768
+[32mschema-registry     |[0m 	reconnect.backoff.max.ms = 1000
+[32mschema-registry     |[0m 	reconnect.backoff.ms = 50
+[32mschema-registry     |[0m 	request.timeout.ms = 30000
+[32mschema-registry     |[0m 	retries = 0
+[32mschema-registry     |[0m 	retry.backoff.ms = 100
+[32mschema-registry     |[0m 	sasl.client.callback.handler.class = null
+[32mschema-registry     |[0m 	sasl.jaas.config = null
+[32mschema-registry     |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[32mschema-registry     |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[32mschema-registry     |[0m 	sasl.kerberos.service.name = null
+[32mschema-registry     |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[32mschema-registry     |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[32mschema-registry     |[0m 	sasl.login.callback.handler.class = null
+[32mschema-registry     |[0m 	sasl.login.class = null
+[32mschema-registry     |[0m 	sasl.login.refresh.buffer.seconds = 300
+[32mschema-registry     |[0m 	sasl.login.refresh.min.period.seconds = 60
+[32mschema-registry     |[0m 	sasl.login.refresh.window.factor = 0.8
+[32mschema-registry     |[0m 	sasl.login.refresh.window.jitter = 0.05
+[32mschema-registry     |[0m 	sasl.mechanism = GSSAPI
+[32mschema-registry     |[0m 	security.protocol = SSL
+[32mschema-registry     |[0m 	security.providers = null
+[32mschema-registry     |[0m 	send.buffer.bytes = 131072
+[32mschema-registry     |[0m 	ssl.cipher.suites = null
+[32mschema-registry     |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[32mschema-registry     |[0m 	ssl.endpoint.identification.algorithm = https
+[32mschema-registry     |[0m 	ssl.key.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keymanager.algorithm = SunX509
+[32mschema-registry     |[0m 	ssl.keystore.location = /etc/schema-registry/secrets/schema-registry.keystore.jks
+[32mschema-registry     |[0m 	ssl.keystore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keystore.type = JKS
+[32mschema-registry     |[0m 	ssl.protocol = TLS
+[32mschema-registry     |[0m 	ssl.provider = null
+[32mschema-registry     |[0m 	ssl.secure.random.implementation = null
+[32mschema-registry     |[0m 	ssl.trustmanager.algorithm = PKIX
+[32mschema-registry     |[0m 	ssl.truststore.location = /etc/schema-registry/secrets/schema-registry.truststore.jks
+[32mschema-registry     |[0m 	ssl.truststore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.truststore.type = JKS
+[32mschema-registry     |[0m 	transaction.timeout.ms = 60000
+[32mschema-registry     |[0m 	transactional.id = null
+[32mschema-registry     |[0m 	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+[32mschema-registry     |[0m  (org.apache.kafka.clients.producer.ProducerConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,590] WARN The configuration 'topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,590] WARN The configuration 'connection.url' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,590] INFO Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,590] INFO Kafka commitId: 43fe9a258cd144d6 (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,590] INFO Kafka startTimeMs: 1586807058590 (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,612] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,619] INFO Kafka store reader thread starting consumer (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,624] INFO ConsumerConfig values: 
+[32mschema-registry     |[0m 	allow.auto.create.topics = true
+[32mschema-registry     |[0m 	auto.commit.interval.ms = 5000
+[32mschema-registry     |[0m 	auto.offset.reset = earliest
+[32mschema-registry     |[0m 	bootstrap.servers = [SSL://broker:9092]
+[32mschema-registry     |[0m 	check.crcs = true
+[32mschema-registry     |[0m 	client.dns.lookup = default
+[32mschema-registry     |[0m 	client.id = KafkaStore-reader-_schemas
+[32mschema-registry     |[0m 	client.rack = 
+[32mschema-registry     |[0m 	connections.max.idle.ms = 540000
+[32mschema-registry     |[0m 	default.api.timeout.ms = 60000
+[32mschema-registry     |[0m 	enable.auto.commit = false
+[32mschema-registry     |[0m 	exclude.internal.topics = true
+[32mschema-registry     |[0m 	fetch.max.bytes = 52428800
+[32mschema-registry     |[0m 	fetch.max.wait.ms = 500
+[32mschema-registry     |[0m 	fetch.min.bytes = 1
+[32mschema-registry     |[0m 	group.id = schema-registry-schema-registry-8181
+[32mschema-registry     |[0m 	group.instance.id = null
+[32mschema-registry     |[0m 	heartbeat.interval.ms = 3000
+[32mschema-registry     |[0m 	interceptor.classes = []
+[32mschema-registry     |[0m 	internal.leave.group.on.close = true
+[32mschema-registry     |[0m 	isolation.level = read_uncommitted
+[32mschema-registry     |[0m 	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+[32mschema-registry     |[0m 	max.partition.fetch.bytes = 1048576
+[32mschema-registry     |[0m 	max.poll.interval.ms = 300000
+[32mschema-registry     |[0m 	max.poll.records = 500
+[32mschema-registry     |[0m 	metadata.max.age.ms = 300000
+[32mschema-registry     |[0m 	metric.reporters = []
+[32mschema-registry     |[0m 	metrics.num.samples = 2
+[32mschema-registry     |[0m 	metrics.recording.level = INFO
+[32mschema-registry     |[0m 	metrics.sample.window.ms = 30000
+[32mschema-registry     |[0m 	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+[32mschema-registry     |[0m 	receive.buffer.bytes = 65536
+[32mschema-registry     |[0m 	reconnect.backoff.max.ms = 1000
+[32mschema-registry     |[0m 	reconnect.backoff.ms = 50
+[32mschema-registry     |[0m 	request.timeout.ms = 30000
+[32mschema-registry     |[0m 	retry.backoff.ms = 100
+[32mschema-registry     |[0m 	sasl.client.callback.handler.class = null
+[32mschema-registry     |[0m 	sasl.jaas.config = null
+[32mschema-registry     |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[32mschema-registry     |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[32mschema-registry     |[0m 	sasl.kerberos.service.name = null
+[32mschema-registry     |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[32mschema-registry     |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[32mschema-registry     |[0m 	sasl.login.callback.handler.class = null
+[32mschema-registry     |[0m 	sasl.login.class = null
+[32mschema-registry     |[0m 	sasl.login.refresh.buffer.seconds = 300
+[32mschema-registry     |[0m 	sasl.login.refresh.min.period.seconds = 60
+[32mschema-registry     |[0m 	sasl.login.refresh.window.factor = 0.8
+[32mschema-registry     |[0m 	sasl.login.refresh.window.jitter = 0.05
+[32mschema-registry     |[0m 	sasl.mechanism = GSSAPI
+[32mschema-registry     |[0m 	security.protocol = SSL
+[32mschema-registry     |[0m 	security.providers = null
+[32mschema-registry     |[0m 	send.buffer.bytes = 131072
+[32mschema-registry     |[0m 	session.timeout.ms = 10000
+[32mschema-registry     |[0m 	ssl.cipher.suites = null
+[32mschema-registry     |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[32mschema-registry     |[0m 	ssl.endpoint.identification.algorithm = https
+[32mschema-registry     |[0m 	ssl.key.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keymanager.algorithm = SunX509
+[32mschema-registry     |[0m 	ssl.keystore.location = /etc/schema-registry/secrets/schema-registry.keystore.jks
+[32mschema-registry     |[0m 	ssl.keystore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.keystore.type = JKS
+[32mschema-registry     |[0m 	ssl.protocol = TLS
+[32mschema-registry     |[0m 	ssl.provider = null
+[32mschema-registry     |[0m 	ssl.secure.random.implementation = null
+[32mschema-registry     |[0m 	ssl.trustmanager.algorithm = PKIX
+[32mschema-registry     |[0m 	ssl.truststore.location = /etc/schema-registry/secrets/schema-registry.truststore.jks
+[32mschema-registry     |[0m 	ssl.truststore.password = [hidden]
+[32mschema-registry     |[0m 	ssl.truststore.type = JKS
+[32mschema-registry     |[0m 	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+[32mschema-registry     |[0m  (org.apache.kafka.clients.consumer.ConsumerConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,629] INFO [Producer clientId=producer-1] Cluster ID: f7TzurV3TF2vVUcM9NcCfg (org.apache.kafka.clients.Metadata)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,771] WARN The configuration 'topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,771] WARN The configuration 'connection.url' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,771] INFO Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,772] INFO Kafka commitId: 43fe9a258cd144d6 (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,772] INFO Kafka startTimeMs: 1586807058771 (org.apache.kafka.common.utils.AppInfoParser)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,797] INFO [Consumer clientId=KafkaStore-reader-_schemas, groupId=schema-registry-schema-registry-8181] Cluster ID: f7TzurV3TF2vVUcM9NcCfg (org.apache.kafka.clients.Metadata)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,800] INFO [Consumer clientId=KafkaStore-reader-_schemas, groupId=schema-registry-schema-registry-8181] Subscribed to partition(s): _schemas-0 (org.apache.kafka.clients.consumer.KafkaConsumer)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,802] INFO [Consumer clientId=KafkaStore-reader-_schemas, groupId=schema-registry-schema-registry-8181] Seeking to EARLIEST offset of partition _schemas-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,803] INFO Initialized last consumed offset to -1 (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,808] INFO [kafka-store-reader-thread-_schemas]: Starting (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,856] INFO [Consumer clientId=KafkaStore-reader-_schemas, groupId=schema-registry-schema-registry-8181] Resetting offset for partition _schemas-0 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,937] INFO Wait to catch up until the offset at 30 (io.confluent.kafka.schemaregistry.storage.KafkaStore)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,980] INFO Joining schema registry with Zookeeper-based coordination (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry)
+[32mschema-registry     |[0m [2020-04-13 19:44:18,996] INFO Successfully elected the new master: {"host":"schema-registry","port":8181,"master_eligibility":true,"scheme":"https","version":1} (io.confluent.kafka.schemaregistry.masterelector.zookeeper.ZookeeperMasterElector)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,007] INFO Successfully elected the new master: {"host":"schema-registry","port":8181,"master_eligibility":true,"scheme":"https","version":1} (io.confluent.kafka.schemaregistry.masterelector.zookeeper.ZookeeperMasterElector)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,018] INFO Wait to catch up until the offset at 31 (io.confluent.kafka.schemaregistry.storage.KafkaStore)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,151] INFO jetty-9.4.20.v20190813; built: 2019-08-13T21:28:18.144Z; git: 84700530e645e812b336747464d6fbbf370c9a20; jvm 1.8.0_212-b04 (org.eclipse.jetty.server.Server)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,182] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,183] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,184] INFO node0 Scavenging every 600000ms (org.eclipse.jetty.server.session)
+[32mschema-registry     |[0m Apr 13, 2020 7:44:19 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+[32mschema-registry     |[0m WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ServerMetadataResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.ServerMetadataResource will be ignored. 
+[32mschema-registry     |[0m Apr 13, 2020 7:44:19 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+[32mschema-registry     |[0m WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ConfigResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.ConfigResource will be ignored. 
+[32mschema-registry     |[0m Apr 13, 2020 7:44:19 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+[32mschema-registry     |[0m WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.SubjectVersionsResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.SubjectVersionsResource will be ignored. 
+[32mschema-registry     |[0m Apr 13, 2020 7:44:19 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+[32mschema-registry     |[0m WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.CompatibilityResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.CompatibilityResource will be ignored. 
+[32mschema-registry     |[0m Apr 13, 2020 7:44:19 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+[32mschema-registry     |[0m WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ModeResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.ModeResource will be ignored. 
+[32mschema-registry     |[0m Apr 13, 2020 7:44:19 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+[32mschema-registry     |[0m WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.SubjectsResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.SubjectsResource will be ignored. 
+[32mschema-registry     |[0m Apr 13, 2020 7:44:19 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+[32mschema-registry     |[0m WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.SchemasResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.SchemasResource will be ignored. 
+[32mschema-registry     |[0m [2020-04-13 19:44:19,588] INFO HV000001: Hibernate Validator 6.0.11.Final (org.hibernate.validator.internal.util.Version)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,778] INFO JVM Runtime does not support Modules (org.eclipse.jetty.util.TypeUtil)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,779] INFO Started o.e.j.s.ServletContextHandler@5023bb8b{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,793] INFO Started o.e.j.s.ServletContextHandler@13d73fa{/ws,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,888] INFO x509=X509@6c796cc1(schema-registry,h=[],w=[]) for Server@87b5b49[provider=null,keyStore=file:///etc/schema-registry/secrets/schema-registry.keystore.jks,trustStore=file:///etc/schema-registry/secrets/schema-registry.truststore.jks] (org.eclipse.jetty.util.ssl.SslContextFactory)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,888] INFO x509=X509@226eba67(caroot,h=[ca.datahub],w=[]) for Server@87b5b49[provider=null,keyStore=file:///etc/schema-registry/secrets/schema-registry.keystore.jks,trustStore=file:///etc/schema-registry/secrets/schema-registry.truststore.jks] (org.eclipse.jetty.util.ssl.SslContextFactory)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,937] INFO Started NetworkTrafficServerConnector@15b3e5b{SSL,[ssl, http/1.1]}{0.0.0.0:8181} (org.eclipse.jetty.server.AbstractConnector)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,938] INFO Started @2966ms (org.eclipse.jetty.server.Server)
+[32mschema-registry     |[0m [2020-04-13 19:44:19,938] INFO Server started, listening for requests... (io.confluent.kafka.schemaregistry.rest.SchemaRegistryMain)
+[36mbroker              |[0m [2020-04-13 19:44:21,349] INFO [Controller id=1] Processing automatic preferred replica leader election (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:21,350] TRACE [Controller id=1] Checking need to trigger auto leader balancing (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:21,353] DEBUG [Controller id=1] Preferred replicas by broker Map(1 -> Map(__confluent.support.metrics-0 -> Vector(1), quotes-0 -> Vector(1), _schemas-0 -> Vector(1))) (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:21,354] DEBUG [Controller id=1] Topics not in preferred replica for broker 1 Map() (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:44:21,355] TRACE [Controller id=1] Leader imbalance ratio for broker 1 is 0.0 (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:49:21,356] INFO [Controller id=1] Processing automatic preferred replica leader election (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:49:21,357] TRACE [Controller id=1] Checking need to trigger auto leader balancing (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:49:21,358] DEBUG [Controller id=1] Preferred replicas by broker Map(1 -> Map(__confluent.support.metrics-0 -> Vector(1), quotes-0 -> Vector(1), _schemas-0 -> Vector(1))) (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:49:21,358] DEBUG [Controller id=1] Topics not in preferred replica for broker 1 Map() (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:49:21,359] TRACE [Controller id=1] Leader imbalance ratio for broker 1 is 0.0 (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:54:16,108] INFO [GroupMetadataManager brokerId=1] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[36mbroker              |[0m [2020-04-13 19:54:21,358] INFO [Controller id=1] Processing automatic preferred replica leader election (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:54:21,358] TRACE [Controller id=1] Checking need to trigger auto leader balancing (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:54:21,359] DEBUG [Controller id=1] Preferred replicas by broker Map(1 -> Map(__confluent.support.metrics-0 -> Vector(1), quotes-0 -> Vector(1), _schemas-0 -> Vector(1))) (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:54:21,359] DEBUG [Controller id=1] Topics not in preferred replica for broker 1 Map() (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:54:21,359] TRACE [Controller id=1] Leader imbalance ratio for broker 1 is 0.0 (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:59:21,358] INFO [Controller id=1] Processing automatic preferred replica leader election (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:59:21,358] TRACE [Controller id=1] Checking need to trigger auto leader balancing (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:59:21,359] DEBUG [Controller id=1] Preferred replicas by broker Map(1 -> Map(__confluent.support.metrics-0 -> Vector(1), quotes-0 -> Vector(1), _schemas-0 -> Vector(1))) (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:59:21,359] DEBUG [Controller id=1] Topics not in preferred replica for broker 1 Map() (kafka.controller.KafkaController)
+[36mbroker              |[0m [2020-04-13 19:59:21,359] TRACE [Controller id=1] Leader imbalance ratio for broker 1 is 0.0 (kafka.controller.KafkaController)
+Gracefully stopping... (press Ctrl+C again to force)

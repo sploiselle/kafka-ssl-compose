@@ -1,5 +1,8 @@
----
-version: '3'
+x-port-mappings:
+  - &server 5000:5000
+  - &materialized 6875:6875
+
+version: '3.7'
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
@@ -32,6 +35,7 @@ services:
       KAFKA_SECURITY_PROTOCOL: SSL
       KAFKA_SECURITY_INTER_BROKER_PROTOCOL: SSL
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CREATE_TOPICS: "quotes:1:1:compact"
     volumes:
       - ./secrets:/etc/kafka/secrets
 
@@ -40,8 +44,8 @@ services:
     container_name: ${SR_HOST}
     hostname: ${SR_HOST}
     depends_on:
-      - ${ZK_HOST}
-      - ${BROKER_HOST}
+      - zookeeper
+      - kafka-ssl
     ports:
       - "${SR_PORT}:${SR_PORT}"
     environment:
@@ -65,6 +69,7 @@ services:
       SCHEMA_REGISTRY_SSL_CLIENT_AUTH: 'true'
     volumes:
       - ./secrets:/etc/schema-registry/secrets
+    # command: ["/etc/schema-registry/scripts/wait-for-it.sh", "${BROKER_HOST}:${BROKER_PORT}"]
 
   schemaregistryui:
     image: landoop/schema-registry-ui
@@ -75,3 +80,26 @@ services:
     environment:
       SCHEMAREGISTRY_URL: 'https://${SR_HOST}:${SR_PORT}'
       PROXY: "true"
+  
+  
+  materialized:
+    image: materialize/materialized:local
+    hostname: materialized
+    ports:
+      - "${MZ_PORT}:${MZ_PORT}"
+    init: true
+    command: -w4 --dev
+    volumes:
+      - logfile:/log
+      - ./secrets:/secrets
+
+  cli:
+    image: materialize/cli
+    init: true
+    # if you run the terminal with a dark background uncomment these lines
+    # environment:
+    #   MZCLI_PROMPT: DARK_MODE
+    depends_on:
+      - materialized
+volumes:
+  logfile:
