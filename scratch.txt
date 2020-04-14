@@ -12,7 +12,6 @@ kafkacat -b broker:9092 \
 -X ssl.key.password=datahub \
 -L
 
-
 echo "my computer is very large" | \
 kafkacat -b broker:9092 \
 -X security.protocol=SSL \
@@ -22,6 +21,15 @@ kafkacat -b broker:9092 \
 -X ssl.key.password=datahub \
 -P \
 -t quotes
+
+kafkacat -b broker:9092 \
+-X security.protocol=SSL \
+-X ssl.key.location=/secrets/key.pem \
+-X ssl.certificate.location=/secrets/certificate.pem \
+-X ssl.ca.location=/secrets/CARoot.pem \
+-X ssl.key.password=datahub \
+-t quotes \
+-r https://schema-registry:8181
 
 docker run --tty \
            --network kafka-ssl-compose_default \
@@ -54,9 +62,29 @@ FROM KAFKA BROKER 'broker:9092'
         ssl_key_password='datahub'
     )
     FORMAT AVRO 
-        USING CONFLUENT SCHEMA REGISTRY 'schema-registry:8181';
+        USING CONFLUENT SCHEMA REGISTRY 'https://schema-registry:8181';
 
 
 
 bin/ci-image build materialized
 :local
+
+
+
+docker run -it --network kafka-ssl-compose_default kafkacat:latest
+
+curl -X GET https://schema-registry:8181/subjects/quotes-value/versions/latest --cacert /secrets/CARoot.pem  --key /secrets/key.pem --cert /secrets/certificate.pem
+
+
+docker run --tty \
+           --network kafka-ssl-compose_default \
+           confluentinc/cp-kafkacat \
+           kafkacat -b broker:9092 \
+            -X security.protocol=SSL \
+            -X ssl.key.location=/secrets/key.pem \
+            -X ssl.certificate.location=/secrets/certificate.pem \
+            -X ssl.ca.location=/secrets/CARoot.pem \
+            -X ssl.key.password=datahub \
+            -t quotes \
+            -s avro \
+            -r https://schema-registry:8181
